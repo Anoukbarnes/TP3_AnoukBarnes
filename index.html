@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Anouk Barnes</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
 </head>
 <body>
-    
+
+    <header>
+        <nav>
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="space-x-3 rtl:space-x-reverse">
+                <img src="img/logo.png" class="h-24" alt="AB Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                <span class="sr-only">Ouverture du menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full bg-orange-400" id="navbar-hamburger">
+                <ul class="flex flex-col font-medium mt-4 rounded-lg">
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white text-6xl rounded hover:text-amber-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white" aria-current="page">Accueil</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white text-6xl rounded hover:text-amber-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white">Projets</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white text-6xl rounded hover:text-amber-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white">À propos</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white text-6xl rounded hover:text-amber-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>
