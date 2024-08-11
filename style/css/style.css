@@ -1,3 +1,27 @@
-.navbar .title {
+.navbar {
   font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+
+.projet-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+}
+
+.btn {
+  background-color: rgb(174, 136, 196);
+  padding: 0.7em;
+  border-radius: 10px;
+  color: rgb(239, 237, 237);
+  transition: padding 200ms;
+}
+.btn:hover {
+  background-color: rgb(175, 122, 205);
+  padding: 0.75em;
+  height: auto;
+  font-weight: 500;
 }
