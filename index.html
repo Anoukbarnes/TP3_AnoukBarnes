@@ -16,43 +16,56 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="space-x-3 rtl:space-x-reverse">
-                <img src="img/logo.png" class="h-24" alt="AB Logo"/>
-            </a>
-            <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
-                <span class="sr-only">Ouverture du menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            <div class="hidden w-full" id="navbar-hamburger">
-                <ul class="flex flex-col font-medium mt-4 rounded-lg">
-                <li>
-                    <a href="index.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">Accueil</a>
-                </li>
-                <li>
-                    <a href="projets.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 transition-all duration-200 ease-in-out hover:translate-x-5">Projets</a>
-                </li>
-                <li>
-                    <a href="apropos.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 transition-all duration-200 ease-in-out hover:translate-x-5">À propos</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 transition-all duration-200 ease-in-out hover:translate-x-5">Contact</a>
-                </li>
-                </ul>
-            </div>
+        <nav class="navbar grid grid-cols-12">
+            <div class="col-start-2 col-end-12">
+                <div class="flex flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="space-x-3 rtl:space-x-reverse">
+                    <img src="img/logo.png" class="h-24" alt="AB Logo"/>
+                </a>
+                <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                    <span class="sr-only">Ouverture du menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full h-full" id="navbar-hamburger">
+                    <ul class="flex flex-col font-medium mt-4 rounded-lg">
+                    <li>
+                        <a href="index.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apropos.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 transition-all duration-200 ease-in-out hover:translate-x-5">
+                            À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block py-12 text-6xl rounded text-amber-100 md:dark:text-white hover:text-gray-400 transition-all duration-200 ease-in-out hover:translate-x-5">
+                            Contact
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h2> Salut! Moi c'est Anouk!</h2>
-            <p>
-                Je suis une développeuse front-end résidant à Montréal, passionnée par le web, la minutie... et le café!
-                J'aime les défis, comme me convaincre que 1 pixel de différence, c'est vraiment pas grave.
-            </p>
+        <section class="grid grid-cols-12 container mx-auto">
+            <div class="col-span-12 py-48">
+                <p class="text-2xl text-center py-5"> Salut! Moi c'est</p>
+                <div>
+                    <h2 class="projet-title text-6xl flex justify-center w-3/12 text-center mx-auto font-extrabold">
+                        Anouk Barnes
+                    </h2>
+                </div>
+                <p class="py-8 text-center w-4/12 mx-auto">
+                    Développeuse front-end junior résidant à Montréal, passionnée par le web, la minutie... et le café!
+                    J'aime les défis, comme me convaincre que 1 pixel de différence, c'est vraiment pas grave.
+                </p> 
+            </div>
+            
         </section>
 
         <section>
@@ -64,7 +77,7 @@
 
                 <div class="col-start-2 col-end-7 row-start-2 row-end-7">
                     <div class="pb-5">
-                        <h2 class="projet-title">Pastaio</h2>
+                        <h4 class="projet-title">Pastaio</h4>
                         <p>
                             Site web multipages pour le restaurant Pastaio
                             fait avec HTML5 et CSS3.
@@ -81,7 +94,7 @@
 
                 <div class="col-start-8 col-end-12 row-span-3">
                     <div class="pb-5 w-10/12">
-                        <h2 class="projet-title">Polarka</h2>
+                        <h4 class="projet-title">Polarka</h4>
                         <p>
                             Site web one pager pour la compagnie de TI fictive Polarka.
                             Fait avec HTML5 en utilisant la méthodologie BEM
@@ -102,7 +115,7 @@
 
                 <div class="col-start-8 col-end-12 row-start-4 row-end-7">
                     <div class="pb-5 w-10/12">
-                        <h2 class="projet-title">Renova</h2>
+                        <h4 class="projet-title">Renova</h4>
                         <p>
                             Site Web pour la compagnie de restauration fictive Renova.
                             Fait avec HMTL5, la librairie Tailwind ainsi que la librairie React.
@@ -120,6 +133,49 @@
             </div>
         </section>
 
+       <section class="grid grid-cols-12 container mx-auto">
+            <h5 class="col-span-12 title">Mes compétences</h5>
+            
+            <div class="col-start-4 col-span-6">
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="col-span-2 flex items-center py-5">
+                        <span><i class="fa-brands fa-html5 fa-4x"></i></span>
+                        <p class="pl-4">HTML5</p>
+                    </div>
+                    <div class="col-span-2 flex items-center py-5">
+                        <span>
+                            <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        </span>
+                        <p class="pl-4">CSS3</p>
+                    </div>
+                    <div class="col-span-2 flex items-center py-5">
+                        <span>
+                            <i class="fa-brands fa-square-js fa-4x"></i>
+                        </span>
+                        <p class="pl-4">JAVASCRIPT</p>
+                    </div>
+                    <div class="col-span-2 flex items-center py-5">
+                        <span>
+                            <i class="fa-brands fa-sass fa-4x"></i>
+                        </span>
+                        <p class="pl-4">SASS</p>
+                    </div>
+                    <div class="col-span-2 flex items-center py-5">
+                        <span>
+                            <i class="fa-brands fa-react fa-4x"></i>
+                        </span>
+                        <p class="pl-4">REACT JS</p>
+                    </div>
+                    <div class="col-span-2 flex items-center py-5">
+                        <span>
+                            <i class="fa-brands fa-git fa-4x"></i>
+                        </span>
+                        <p class="pl-4">GIT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class=" m-4">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -128,9 +184,6 @@
                     <img src="img/logo.png" class="h-24" alt="AB Logo"/>
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                    <li>
-                        <a href="projets.html" class="hover:underline me-4 md:me-6">Projets</a>
-                    </li>
                     <li>
                         <a href="apropos.html" class="hover:underline me-4 md:me-6">À propos</a>
                     </li>
