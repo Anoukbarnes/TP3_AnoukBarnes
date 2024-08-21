@@ -33,3 +33,10 @@ body {
   height: auto;
   font-weight: 500;
 }
+
+.links {
+  color: rgb(50, 72, 193);
+}
+.links:hover {
+  font-weight: bold;
+}
