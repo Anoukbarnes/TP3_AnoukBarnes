@@ -53,7 +53,68 @@
     </header>
 
     <main>
-        
+        <section class="grid grid-cols-12 container mx-auto">
+            <div class="col-span-12">
+                 <h1 class="title text-end">À propos</h1>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-12 container mx-auto">
+            <div class="col-span-4">
+                 <form action="/confirmation.html" novalidate class="flex flex-col">
+                    <label for="nom">
+                        Nom <span>*</span>
+                    </label>
+                    <input type="text" id="nom">
+
+                    <label for="prenom">
+                        Prénom <span>*</span>
+                    </label>
+                    <input type="text" id="prenom">
+
+                    <label for="email">
+                        Courriel <span>*</span>
+                    </label>
+                    <input type="email" id="email">
+
+                    <label for="tel">
+                        Numéro de téléphone <span>*</span>
+                    </label>
+                    <input type="tel" id="tel">
+
+                    <label for="entreprise">
+                        Nom de l'entreprise
+                        <span>
+                            (Si applicable)
+                        </span>
+                    </label>
+                    <input type="text" id="entreprise">
+
+                    <label for="delais">
+                        Délais souhaité <span>*</span>
+                    </label>
+                    <input type="date" id="delais">
+
+                    <label for="budget">Budget estimé</label>
+                    <select id="budget">
+                        <option>Choisissez une option</option>
+                        <option value="0-2k">2 000$ et moins</option>
+                        <option value="2k-5k">2 000 à 5 000$</option>
+                        <option value="5k-10k">5 000 à 10 000$</option>
+                        <option value="10k-25k">10 000 à 25 000$</option>
+                    </select>
+
+                    <label for="description">
+                        Description de votre projet <span>*</span>
+                    </label>
+                    <input type="textarea" id="description">
+
+                    <input type="submit">
+
+                </form>
+            </div>
+           
+        </section>
 
     </main>
 
