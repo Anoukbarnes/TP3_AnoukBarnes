@@ -61,63 +61,86 @@
 
         <section class="grid grid-cols-12 container mx-auto">
             <div class="col-start-5 col-end-9">
-                 <form action="/confirmation.html" novalidate class="flex flex-col">
-                    <label for="nom">
-                        Nom <span>*</span>
-                    </label>
-                    <input class="my-2" type="text" id="nom" placeholder="Nom">
-
-                    <label class="mt-3" for="prenom">
-                        Prénom <span>*</span>
-                    </label>
-                    <input class="my-2" type="text" id="prenom" placeholder="Prénom">
-
-                    <label class="mt-3" for="email">
-                        Courriel <span>*</span>
-                    </label>
-                    <input class="my-2" type="email" id="email" placeholder="abc@mail.com">
-
-                    <label class="mt-3" for="tel">
+                 <form id="form" action="/confirmation.html" novalidate class="flex flex-col">
+                    <div class="input-control">
+                        <label for="firstname w-full" class="form__label">
+                            Prénom <span>*</span>
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-gray-100 form__input" type="text" id="fistname" placeholder="Prénom">
+                        <div class="errorMessage"></div>
+                    </div>
+                     
+                    <div class="input-control">
+                        <label class="mt-3 form__label" for="lastname">
+                            Nom <span>*</span>
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-2 border-gray-100 form__input" type="text" id="lastname" placeholder="Nom">
+                        <div class="errorMessage"></div>
+                    </div>
+                    
+                    <div class="input-control">
+                        <label class="mt-3 form__label" for="email">
+                            Courriel <span>*</span>
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-2 border-gray-100 form__input" type="email" id="email" placeholder="abc@mail.com">
+                        <div class="errorMessage"></div>
+                    </div>
+                    
+                   <div class="input-control">
+                       <label class="mt-3 form__label" for="tel">
                         Numéro de téléphone <span>*</span>
-                    </label>
-                    <input class="my-2" type="tel" id="tel" placeholder="123-456-7891">
-
-                    <label class="mt-3" for="entreprise">
-                        Nom de l'entreprise
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-2 border-gray-100 form__input" type="tel" id="tel" placeholder="123-456-7891">
+                        <div class="errorMessage"></div>
+                   </div> 
+                 
+                    <div class="input-control">
+                         <label class="mt-3 form__label" for="entreprise">
+                            Nom de l'entreprise
                         <span>
                             (si applicable)
                         </span>
-                    </label>
-                    <input class="my-2" type="text" id="entreprise" placeholder="Nom de l'entreprise">
-
-                    <label class="mt-3" for="delais">
-                        Délais souhaité <span>*</span>
-                    </label>
-                    <input class="my-2" type="date" id="delais">
-
-                    <label class="mt-3" for="budget">Budget estimé</label>
-                    <select class="my-2 py-2" id="budget">
-                        <option disabled selected>Choisissez une option</option>
-                        <option value="2k-5k">2 000 à 5 000$</option>
-                        <option value="2k-5k">2 000 à 5 000$</option>
-                        <option value="5k-10k">5 000 à 10 000$</option>
-                        <option value="10k-25k">10 000 à 25 000$</option>
-                    </select>
-
-                    <label class="mt-3" for="description">
-                        Description de votre projet <span>*</span>
-                    </label>
-                    <input class="my-2 pt-2 pb-16" type="textarea" id="description" placeholder="Décrivez votre projet entre 25 et 500 mots.">
-
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-2 border-gray-100 form__input" type="text" id="entreprise" placeholder="Nom de l'entreprise">
+                        <div class="errorMessage"></div>
+                    </div>
+                   
+                    <div class="input-control">
+                        <label class="mt-3 form__label" for="delais">
+                            Délais souhaité <span>*</span>
+                        </label>
+                        <input class="my-2 w-full rounded-lg border-2 border-gray-100 form__input" type="date" id="delais">
+                        <div class="errorMessage"></div>
+                    </div>
+                    
+                    <div class="input-control">
+                        <label class="mt-3 form__label" for="budget">Budget estimé</label>
+                        <select class="my-2 w-full py-2 pl-2 rounded-lg border-2 border-gray-100 form__input" id="budget">
+                            <option disabled selected>Choisissez une option</option>
+                            <option value="2k-5k">2 000 à 5 000$</option>
+                            <option value="2k-5k">2 000 à 5 000$</option>
+                            <option value="5k-10k">5 000 à 10 000$</option>
+                            <option value="10k-25k">10 000 à 25 000$</option>
+                        </select>
+                        <div class="errorMessage"></div>
+                    </div>
+                    
+                    <div class="input-control">
+                        <label class="mt-3 form__label" for="description">
+                            Description de votre projet <span>*</span>
+                        </label>
+                        <input class="my-2 w-full pt-2 pl-2 pb-16 rounded-lg border-2 border-gray-100 form__input" type="textarea" id="description" placeholder="Décrivez votre projet entre 25 et 500 mots.">
+                        <div class="errorMessage"></div>
+                    </div>
+                    
                     <input class="my-2 btn-primary" type="submit" value="Envoyer">
 
                 </form>
             </div>
-           
         </section>
 
     </main>
-    
+
     <footer class="grid grid-cols-12 py-10">
         <div class="col-start-2 col-end-12">
             <div class="sm:flex sm:items-center sm:justify-between">
