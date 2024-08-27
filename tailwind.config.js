@@ -90,3 +90,21 @@ function validatePhoneNumber(tel) {
     const telRegex = /^\d{3}-\d{3}-\d{4}$/;
     return telRegex.test(tel);
 }
+
+const setError = (input, message) => {
+    const inputControl = input.parentElement;
+    const errorDisplay = inputControl.querySelector('.errorMessage');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+}
+
+const setSuccess = input => {
+    const inputControl = input.parentElement;
+    const errorDisplay = inputControl.querySelector('.errorMessage');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.remove('error');
+    inputControl.classList.add('success');
+}
