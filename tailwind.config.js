@@ -56,6 +56,9 @@ const validateInputs = () => {
     if (telValue === '') {
         setError(tel, 'Veuillez entrer un numéro de téléphone');
         noError = false;
+    }  else if (!checkPhoneNumber(telValue)) {
+        setError(tel, 'Veuillez entrer un numéro sous la forme de 123-456-7890');
+        noError = false;
     } else {
         setSuccess(tel);
     }
