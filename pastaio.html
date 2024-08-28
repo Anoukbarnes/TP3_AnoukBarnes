@@ -53,11 +53,11 @@
     </header>
 
     <main>
-        <section class="grid grid-cols-12 container mx-auto">
+        <section class="grid grid-cols-12 container mx-auto px-6">
             <div class="col-span-12">
                  <h1 class="title text-center">Pastaio</h1>
             </div>
-            <div class="col-start-5 col-end-9 pb-8 text-justify">
+            <div class=" pb-8 sm:text-justify col-span-12 px-10 sm:px-0 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
                 <p>
                     Pastaio est un site web multipages pour le restaurant fictif Pastaio fait avec HTML5, CSS3
                     et JavaScript. Le site responsive de plusieurs pages permet au restaurant de présenter son
@@ -70,8 +70,8 @@
 
         <section>
             <h2 class="sr-only">Projet Pastaio</h2>
-                <!--Lien composant: https://flowbite.com/docs/components/gallery/-->
                 <div class="grid grid-cols-12 container mx-auto pb-32 pt-6 px-2 sm:px-6">
+                    <!--Lien composant: https://flowbite.com/docs/components/gallery/-->
                     <div id="custom-controls-gallery" class="relative w-full col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative overflow-hidden rounded-xl h-[15em] xs:h-[20em] sm:h-[25em] md:h-[30em]">
@@ -118,44 +118,44 @@
         <section>
             <h3 class="sr-only">Description du projet</h3>
 
-            <div class="grid grid-cols-12 container mx-auto">
+            <div class="grid grid-cols-12 container mx-auto px-6">
                 <div class="col-span-12 bg-slate-300 rounded-xl my-10">
-                    <div class="flex justify-center pt-14 items-center">
-                        <div class="w-5/12 pr-20">
-                            <img class="rounded-t-xl items-end border-l-3 border-t-4 border-r-4 border-slate-400" src="img/commandePastaio.png" alt="Image Pastaio page Ma commande">
+                    <div class="flex flex-col items-center md:justify-center md:items-end md:flex-row xl:pt-14 pt-8">
+                        <div class="md:w-3/12 w-10/12 md:pr-20">
+                            <img class="md:rounded-t-xl md:items-end rounded-xl border-l-3 border-t-4 border-r-4 border-slate-400" src="img/commandePastaio.png" alt="Image Pastaio page Ma commande">
                         </div>
-                        <div class="w-4/12">
-                            <h4 class="pb-10 text-xl">Page Ma commande</h4>
-                            <p class="leading-relaxed">Cette page parmet à l'utilisateur de voir les éléments du menu et faire sa commande.  
+                        <div class="md:w-4/12 md:text-left w-10/12 pb-12">
+                            <h4 class="md:pb-10 py-8 md:text-xl text-lg text-center">Page Ma commande</h4>
+                            <p class="leading-relaxed text-justify md:text-base text-sm"> 
                                 Avec JavaScript, la page permet d'afficher, modifier, supprimer et ajouter de manière dynamique les
-                                quantités de sa commande. Cela permet également d'afficher le total de la commande de manière dynamique
+                                quantités de la commande du client tout en affichant le total de celle-ci de manière dynamique
                                 selon les changements de l'utilisateur. 
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-12 bg-slate-300 rounded-xl my-10">
-                    <div class="flex justify-center pt-14 items-center">
-                        <div class="w-4/12">
-                            <h4 class="pb-10 text-xl">Page Réservations</h4>
-                            <p class="leading-relaxed">La page réservation permet de remplir un formulaire afin de réserver une table. Le formulaire
-                                fait avec HMTL5 contient plusieurs types d'entrées et de boutons. Une vérification JavaScript
+                    <div class="flex flex-col items-center md:justify-center md:items-end md:flex-row xl:pt-14 pb-8">
+                        <div class="md:w-4/12 md:text-left w-10/12 pb-12">
+                            <h4 class="md:pb-10 py-8 md:text-xl text-lg text-center">Page Réservations</h4>
+                            <p class="leading-relaxed text-justify md:text-base text-sm">
+                                La page réservation permet de remplir un formulaire afin de réserver une table. Une vérification JavaScript
                                 est ensuite complété avec des messages d'erreurs spécifiques pour chaque champ. 
                             </p>
                         </div>
-                        <div class="w-5/12 pl-20">
-                            <img class="rounded-t-xl items-end border-l-3 border-t-4 border-r-4 border-slate-400" src="img/reservationsPastaio.png" alt="Image Pastaio page Réservations">
+                        <div class="md:w-3/12 w-10/12 md:pr-20">
+                            <img class="md:rounded-t-xl md:items-end rounded-xl border-l-3 border-t-4 border-r-4 border-slate-400" src="img/reservationsPastaio.png" alt="Image Pastaio page Réservations">
                         </div>
                     </div>
                 </div>
                 <div class="col-span-12 bg-slate-300 rounded-xl my-10">
-                    <div class="flex justify-center pt-14 items-center">
-                        <div class="w-5/12 pr-20">
-                            <img class="rounded-t-xl items-end border-l-3 border-t-4 border-r-4 border-slate-400" src="img/restaurantPastaio.png" alt="Image Pastaio page Restaurant">
+                    <div class="flex flex-col items-center md:justify-center md:items-end md:flex-row xl:pt-14 pt-8">
+                        <div class="md:w-3/12 w-10/12 md:pr-20">
+                            <img class="md:rounded-t-xl md:items-end rounded-xl border-l-3 border-t-4 border-r-4 border-slate-400" src="img/restaurantPastaio.png" alt="Image Pastaio page Restaurant">
                         </div>
-                        <div class="w-4/12 py-20">
-                            <h4 class="pb-10 text-xl">Page Restaurant</h4>
-                            <p class="leading-relaxed">La page Restaurant affiche une grille d'image fait avec la propriété css grid ainsi
+                        <div class="md:w-4/12 md:text-left w-10/12 pb-12">
+                            <h4 class="md:pb-10 py-8 md:text-xl text-lg text-center">Page Restaurant</h4>
+                            <p class="leading-relaxed text-justify md:text-base text-sm">La page Restaurant affiche une grille d'image fait avec la propriété css grid ainsi
                                 que l'utilisation d'un iframe pour afficher la localisation du restaurant sur Google Maps. 
                             </p>
                         </div>
@@ -164,17 +164,25 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-12 container mx-auto py-8">
-            <h5 class="sr-only">Liens pour visiter le site</h5>
-            <div class="col-start-6 col-end-8">
-                <a href="#" class="links">Visiter le site</a> 
-                <span class="inline-block pl-2"><i class="fa-solid fa-globe"></i></span>
+        <section>
+            <div class="grid grid-cols-12 container mx-auto sm:py-8 pt-16">
+                <h5 class="projet-title text-center col-span-12 sm:pb-12 pb-4">Pour plus d'informations</h5>
             </div>
-            <h5 class="sr-only">Liens vers le GitLab du projet</h5>
-            <div class="col-span-3">
-                <span class="inline-block pr-2"><i class="fa-brands fa-gitlab"></i></span>
-                <a href="#" class="links">GitLab</a>
+            
+            <div class="grid grid-cols-12 container mx-auto py-8">
+                <div class="flex col-span-12 sm:flex-row sm:justify-center flex-col justify-center items-center">
+                    <div class="flex sm:justify-between sm:flex-row flex-col items-center">
+                        <a href="#" class="links btn-primary text-white sm:mr-20 sm:mb-0 mb-8">Visiter le site
+                            <span class="inline-block pl-2"><i class="fa-solid fa-globe"></i></span>
+                        </a> 
+                        <a href="#" class="links btn-primary text-white">
+                            <span class="inline-block pr-2"><i class="fa-brands fa-gitlab"></i>
+                            </span>GitLab
+                        </a>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
     </main>
