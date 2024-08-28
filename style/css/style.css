@@ -41,32 +41,21 @@ body {
   font-weight: bold;
 }
 
-.form__input {
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-size: 12px;
-  padding: 12px;
-  width: 100%;
-  margin-top: 4%;
-}
-.form__input:focus {
+.input-control input:focus {
   outline: 0;
 }
-.form .input-controlinput:focus {
-  outline: 0;
-}
-.form .input-control.success input {
+.input-control.success input {
   border-color: #09c372;
 }
-.form .input-control.error input {
+.input-control.error input {
   border-color: #ff3860;
 }
-.form .input-control .errorMessage {
+.input-control .errorMessage {
   color: #ff3860;
   font-size: 9px;
   height: 13px;
 }
+
 .form__span {
   padding-left: 0.5em;
   color: #ff3860;
