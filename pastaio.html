@@ -57,7 +57,7 @@
             <div class="col-span-12">
                  <h1 class="title text-center">Pastaio</h1>
             </div>
-            <div class="col-start-5 col-end-9 py-8 text-justify">
+            <div class="col-start-5 col-end-9 pb-8 text-justify">
                 <p>
                     Pastaio est un site web multipages pour le restaurant fictif Pastaio fait avec HTML5, CSS3
                     et JavaScript. Le site responsive de plusieurs pages permet au restaurant de présenter son
@@ -70,49 +70,49 @@
 
         <section>
             <h2 class="sr-only">Projet Pastaio</h2>
-                
-            <div class="grid grid-cols-12 container mx-auto pb-32 pt-6">
                 <!--Lien composant: https://flowbite.com/docs/components/gallery/-->
-                <div id="custom-controls-gallery" class="relative w-full col-start-4 col-end-10" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative overflow-hidden rounded-lg md:h-[30em]">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="img/pastaioAccueil.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page d'accueil">
+                <div class="grid grid-cols-12 container mx-auto pb-32 pt-6 px-2 sm:px-6">
+                    <div id="custom-controls-gallery" class="relative w-full col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative overflow-hidden rounded-xl h-[15em] xs:h-[20em] sm:h-[25em] md:h-[30em]">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/pastaioAccueil.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page d'accueil">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                <img src="img/restaurantPastaio.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page restaurant">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/commandePastaio.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=" Pastaio page Ma commande">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/reservationsPastaio.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page réservations">
+                            </div>
                         </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="img/restaurantPastaio.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page restaurant">
+                        <div class="flex justify-center items-center pt-4">
+                            <button type="button" class="flex justify-center items-center mr-2 sm:mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                                <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                    <svg class="rtl:rotate-180 w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                                <span class="text-gray-400 hover:text-gray-900 group-focus:text-gray-900 ">
+                                    <svg class="rtl:rotate-180 w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
                         </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="img/commandePastaio.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=" Pastaio page Ma commande">
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="img/reservationsPastaio.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Pastaio page réservations">
-                        </div>
-                    </div>
-                    <div class="flex justify-center items-center pt-4">
-                        <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                            <span class="text-gray-400 hover:text-gray-900 group-focus:text-gray-900 ">
-                                <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
                     </div>
                 </div>
-            </div>
+                
         </section>
         
         <section>
