@@ -55,13 +55,13 @@
     <main>
         <section class="grid grid-cols-12 container mx-auto">
             <div class="col-span-12">
-                 <h1 class="title text-end">À propos</h1>
+                 <h1 class="title text-end">Me contacter</h1>
             </div>
         </section>
 
         <section class="grid grid-cols-12 container mx-auto">
             <div class="col-start-5 col-end-9">
-                 <form id="form" class="flex flex-col" novalidate>
+                <form id="form" class="flex flex-col" action="confirmation.html" novalidate>
                     <div class="input-control">
                         <label for="firstname" class="form__label w-full">
                             Prénom <span>*</span>
@@ -116,7 +116,7 @@
                     <div class="input-control">
                         <label class="mt-3 form__label" for="budget">Budget estimé</label>
                         <select class="my-2 w-full py-2 pl-2 rounded-lg border-2 border-gray-100 form__input" id="budget">
-                            <option disabled selected>Choisissez une option</option>
+                            <option value="default" disabled selected>Choisissez une option</option>
                             <option value="2k-5k">2 000 à 5 000$</option>
                             <option value="2k-5k">2 000 à 5 000$</option>
                             <option value="5k-10k">5 000 à 10 000$</option>
@@ -129,7 +129,7 @@
                         <label class="mt-3 form__label" for="description">
                             Description de votre projet <span>*</span>
                         </label>
-                        <input class="my-2 w-full pt-2 pl-2 pb-16 rounded-lg border-2 border-gray-100 form__input" type="textarea" id="description" placeholder="Décrivez votre projet entre 25 et 500 mots.">
+                        <input class="my-2 w-full pt-2 pl-2 pb-16 rounded-lg border-2 border-gray-100 form__input" type="textarea" id="description" placeholder="Description entre 25 et 500 caractères.">
                         <div class="errorMessage"></div>
                     </div>
                     
