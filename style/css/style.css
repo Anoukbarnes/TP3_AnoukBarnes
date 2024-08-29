@@ -25,6 +25,22 @@ body {
   background-color: rgb(220, 220, 220);
 }
 
+.bg-projet-1 {
+  background-color: rgb(234, 240, 206);
+}
+
+.bg-projet-2 {
+  background-color: rgb(201, 128, 128);
+}
+
+.bg-projet-3 {
+  background-color: rgb(112, 140, 167);
+}
+
+.btn-nav {
+  background-color: rgb(223, 236, 165);
+}
+
 .btn-primary {
   background-color: rgb(174, 136, 196) !important;
   padding: 0.7em;
