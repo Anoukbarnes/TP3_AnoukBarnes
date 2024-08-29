@@ -18,7 +18,11 @@ body {
 }
 
 .bg-apropos {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(97, 146, 124);
+}
+
+.bg-contact {
+  background-color: rgb(148, 158, 214);
 }
 
 .btn-primary {
