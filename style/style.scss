@@ -1,6 +1,9 @@
 $btn-color: rgb(174, 136, 196);
-$primary-color: rgb(50, 72, 193);
+$primary-color2: rgb(148, 158, 214);
 $bg-color: rgb(248, 244, 244);
+$primary-color:rgb(230, 232, 255);
+$page-2-color: rgb(255, 255, 255);
+$page-3-color: rgb(97, 146, 124);
 
 //Form
 $successColor : #09c372;
@@ -8,25 +11,27 @@ $errorColor: #ff3860;
 $bg-form: whitesmoke;
 
 body{
-    background-color: $bg-color;
+    background-color: $primary-color;
 }
 
 .navbar {
     font-family: "Open Sans", sans-serif;
-    background-color: $primary-color;
+    
 }
 
 .title {
     font-family: "Open Sans", sans-serif;
     font-size: 3rem;
     padding: 1.5em 0 1.5em 0;
-    color: $primary-color;
 }
 
 .projet-title{
     font-family: "Open Sans", sans-serif;
     font-size: 1.7rem;
-    color: $primary-color
+}
+
+.bg-apropos{
+    background-color: $page-2-color;
 }
 
 

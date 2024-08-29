@@ -1,23 +1,24 @@
 body {
-  background-color: rgb(248, 244, 244);
+  background-color: rgb(230, 232, 255);
 }
 
 .navbar {
   font-family: "Open Sans", sans-serif;
-  background-color: rgb(50, 72, 193);
 }
 
 .title {
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   padding: 1.5em 0 1.5em 0;
-  color: rgb(50, 72, 193);
 }
 
 .projet-title {
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
-  color: rgb(50, 72, 193);
+}
+
+.bg-apropos {
+  background-color: rgb(255, 255, 255);
 }
 
 .btn-primary {
@@ -35,7 +36,7 @@ body {
 }
 
 .links {
-  color: rgb(50, 72, 193);
+  color: rgb(230, 232, 255);
 }
 .links:hover {
   font-weight: bold;
