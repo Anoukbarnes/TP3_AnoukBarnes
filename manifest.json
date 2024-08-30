@@ -1,0 +1,36 @@
+{
+    "name": "Portfolio Anouk Barnes",
+    "short_name": "Portfolio Anouk",
+    "description": "Portfolio Anouk Barnes",
+    "icons": [
+      {
+        "src": "img/maskable-icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "img/icon192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }],
+      "screenshots": [
+        {
+         "src": "img/screenshot.jpeg",
+          "sizes": "1878x850",
+          "type": "image/gif",
+          "form_factor": "wide"
+        },
+        {
+          "src": "img/screenshot-2.jpeg",
+           "sizes": "450x333",
+           "type": "image/gif",
+           "form_factor": "narrow"
+         }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#3E4EB8",
+    "theme_color": "#2F3BA2",
+    "orientation": "landscape"
+  }
