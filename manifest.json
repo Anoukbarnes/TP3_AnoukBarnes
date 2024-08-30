@@ -1,6 +1,6 @@
 {
     "name": "Portfolio Anouk Barnes",
-    "short_name": "Portfolio Anouk",
+    "short_name": "Portfolio AB",
     "description": "Portfolio Anouk Barnes",
     "icons": [
       {
@@ -22,13 +22,13 @@
     ],
     "screenshots": [
       {
-        "src": "img/screenshot.jpeg",
+        "src": "img/PWA/screenshot.png",
         "sizes": "1878x850",
         "type": "image/jpeg",
         "form_factor": "wide"
       },
       {
-        "src": "img/screenshot-2.jpeg",
+        "src": "img/PWA/screenshot-2.png",
         "sizes": "450x333",
         "type": "image/jpeg",
         "form_factor": "narrow"
@@ -36,7 +36,7 @@
     ],
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#3E4EB8",
-    "theme_color": "#2F3BA2",
+    "background_color": "#E5E8FF",
+    "theme_color": "#000000",
     "orientation": "landscape"
   }
