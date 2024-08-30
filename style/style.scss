@@ -18,6 +18,11 @@ body{
     background-color: $primary-color;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .navbar {
     font-family: "Open Sans", sans-serif;
     
