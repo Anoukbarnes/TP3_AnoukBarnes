@@ -16,26 +16,26 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar grid grid-cols-12">
-            <div class="col-start-2 col-end-12">
-                <div class="flex flex-wrap items-center justify-between mx-auto">
-                    <a href="index.html" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
-                        <img src="img/logo.png" class="h-16" alt="AB Logo"/>
-                    </a>
-                    <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 text-sm text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-hamburger" aria-expanded="false">
-                        <span class="sr-only">Ouverture du menu</span>
-                        <div class="p-5 btn-nav rounded-2xl border-2 border-black">
-                            <p>MENU</p>
-                        </div>
-                    </button>
-                    <div class="hidden w-full h-full" id="navbar-hamburger">
-                        <ul class="flex flex-col font-medium mt-4 rounded-lg">
+    <header class="navbar grid grid-cols-12">
+        <nav class="col-start-2 col-end-12">
+            <div class="flex flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
+                    <img src="img/logo.png" class="h-16" alt="AB Logo"/>
+                </a>
+                <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 text-sm text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-hamburger" aria-expanded="false">
+                    <span class="sr-only">Ouverture du menu</span>
+                    <div class="p-5 btn-nav rounded-2xl border-2 border-black">
+                        <p>MENU</p>
+                    </div>
+                </button>
+                <div class="hidden w-full h-full" id="navbar-hamburger">
+                    <ul class="flex flex-col font-medium mt-4 rounded-lg">
                         <li>
                             <a href="index.html" class="block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
                                 Accueil
                             </a>
                         </li>
+                        
                         <li>
                             <a href="apropos.html" class="block py-12 text-6xl rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
                                 À propos
@@ -46,8 +46,28 @@
                                 Contact
                             </a>
                         </li>
-                        </ul>
-                    </div>
+                        <li class="group">
+                            <a href="#" class=" w-3/12 block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
+                                Projets
+                            </a>
+                            <ul class="pl-32 hidden group-hover:block">
+                                <li>
+                                    <a href="pastaio.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
+                                        - Pastaio
+                                    </a>
+                                <li>
+                                    <a href="polarka.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
+                                        - Polarka
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="renova.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
+                                        - Renova
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
