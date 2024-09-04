@@ -62,6 +62,7 @@
   border-radius: 10px;
   color: rgb(239, 237, 237);
   transition: padding 200ms;
+  border: solid black 2px;
 }
 .btn-primary:hover {
   background-color: rgb(175, 122, 205);
@@ -79,6 +80,10 @@
 
 .navbar {
   font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(230, 232, 255);
 }
 
 img {
