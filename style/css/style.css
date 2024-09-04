@@ -52,6 +52,10 @@
   color: #a0132f;
 }
 
+button.btn-nav {
+  background-color: rgb(223, 236, 165);
+}
+
 .btn-nav {
   background-color: rgb(223, 236, 165);
 }

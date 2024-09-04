@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+button.btn-nav {
+    background-color: $btn-nav;
+}
+
 .btn-nav {
     background-color: $btn-nav;
 }
