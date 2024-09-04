@@ -1,27 +1,3 @@
-body {
-  background-color: rgb(230, 232, 255);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.navbar {
-  font-family: "Open Sans", sans-serif;
-}
-
-.title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
-  padding: 1.5em 0 1.5em 0;
-}
-
-.projet-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.7rem;
-}
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
@@ -56,6 +32,26 @@ img {
   background-color: rgb(112, 140, 167);
 }
 
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input {
+  border-color: #a0132f;
+}
+.input-control .errorMessage {
+  color: #a0132f;
+  font-size: 12px;
+  height: 20px;
+}
+
+.form__span {
+  padding-left: 0.5em;
+  color: #a0132f;
+}
+
 .btn-nav {
   background-color: rgb(223, 236, 165);
 }
@@ -81,22 +77,22 @@ img {
   font-weight: bold;
 }
 
-.input-control input:focus {
-  outline: 0;
-}
-.input-control.success input {
-  border-color: #09c372;
-}
-.input-control.error input {
-  border-color: #ff3860;
-}
-.input-control .errorMessage {
-  color: #ff3860;
-  font-size: 9px;
-  height: 13px;
+.navbar {
+  font-family: "Open Sans", sans-serif;
 }
 
-.form__span {
-  padding-left: 0.5em;
-  color: #ff3860;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  padding: 1.5em 0 1.5em 0;
+}
+
+.projet-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
 }

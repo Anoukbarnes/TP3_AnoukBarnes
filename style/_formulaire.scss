@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.input-control {
+    
+    input:focus {
+        outline: 0;
+    }
+
+    &.success input {
+        border-color: $successColor;
+    }
+
+    &.error input {
+        border-color: $errorColor;
+    }
+
+    .errorMessage {
+        color: $errorColor;
+        font-size: 12px;
+        height: 20px;
+    }
+}
+
+.form {
+
+    &__span {
+        padding-left: 0.5em;
+        color: $errorColor;
+    }
+
+}

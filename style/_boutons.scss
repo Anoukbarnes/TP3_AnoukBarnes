@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.btn-nav {
+    background-color: $btn-nav;
+}
+
+.btn-primary {
+    background-color: $btn-color !important;
+    padding: 0.7em;
+    border-radius: 10px;
+    color:rgb(239, 237, 237);
+    transition: padding 200ms;
+
+    &:hover {
+        background-color: rgb(175, 122, 205);
+        padding: 0.75em;
+        height: auto;
+        font-weight: 500;
+    }
+}
+
+.links {
+    color: $primary-color;
+
+    &:hover {
+        font-weight: bold;
+      }
+}
