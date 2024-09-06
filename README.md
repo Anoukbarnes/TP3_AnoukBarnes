@@ -38,5 +38,8 @@ Ce portfolio est également une Progressive Web App (PWA), offrant la possibilit
 - Footer:
   https://flowbite.com/docs/components/navbar/#hamburger-menu
 
-
+Lien vers le repo:
 https://github.com/Anoukbarnes/TP3_AnoukBarnes.git
+
+Lien du site (Github Pages):
+https://anoukbarnes.github.io/TP3_AnoukBarnes/
