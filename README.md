@@ -30,7 +30,8 @@ Ce portfolio est également une Progressive Web App (PWA), offrant la possibilit
 ## :ocean: Composants Tailwind utilisés
 
 - Barre de Navigation:
-# https://flowbite.com/docs/components/navbar/#hamburger-menu
+    <br>
+    https://flowbite.com/docs/components/navbar/#hamburger-menu
 
 - Carousel pour la présentation des projets (page Pastaio, Polarka et Renova):
   https://flowbite.com/docs/components/gallery/
