@@ -27,12 +27,12 @@ Ce portfolio présente un résumé de mes compétences et met en valeur plusieur
 Ce portfolio est également une Progressive Web App (PWA), offrant la possibilité de le télécharger et de naviguer sur l'application même sans connexion internet.
 
 
-## :iphone: Composants Tailwind utilisés
+## :ocean: Composants Tailwind utilisés
 
 - Barre de Navigation:
   https://flowbite.com/docs/components/navbar/#hamburger-menu
 
-- Carousel pour la présentation des projets:
+- Carousel pour la présentation des projets (page Pastaio, Polarka et Renova):
   https://flowbite.com/docs/components/gallery/
 
 - Footer:
