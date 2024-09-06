@@ -34,13 +34,17 @@ Ce portfolio est également une Progressive Web App (PWA), offrant la possibilit
     https://flowbite.com/docs/components/navbar/#hamburger-menu
 
 - Carousel pour la présentation des projets (page Pastaio, Polarka et Renova):
+    <br>
   https://flowbite.com/docs/components/gallery/
 
 - Footer:
+<br>
   https://flowbite.com/docs/components/navbar/#hamburger-menu
 
 Lien vers le repo:
+<br>
 https://github.com/Anoukbarnes/TP3_AnoukBarnes.git
 
 Lien du site (Github Pages):
+<br>
 https://anoukbarnes.github.io/TP3_AnoukBarnes/
