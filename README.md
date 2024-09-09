@@ -41,6 +41,10 @@ Ce portfolio est également une Progressive Web App (PWA), offrant la possibilit
   <br>
   https://flowbite.com/docs/components/navbar/#hamburger-menu
 
+- Formulaire de contact: 
+  <br>
+https://flowbite.com/docs/components/forms/#floating-labels
+
 ## Autres Liens
 Lien vers le repo:
 <br>
