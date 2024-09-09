@@ -10,14 +10,22 @@
         "purpose": "maskable"
       },
       {
-        "src": "img/PWA/icon192.png",
-        "sizes": "192x192",
+        "src": "img/PWA/icon412.png",
+        "sizes": "144x144",
         "type": "image/png"
       },
       {
+        "src": "img/PWA/icon192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+  
+      {
         "src": "img/PWA/icon512.png",
         "sizes": "512x512",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       }
     ],
     "screenshots": [
@@ -36,7 +44,7 @@
     ],
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#E5E8FF",
-    "theme_color": "#000000",
+    "background_color": "#dfeca5",
+    "theme_color": "#ae88c4",
     "orientation": "landscape"
   }
