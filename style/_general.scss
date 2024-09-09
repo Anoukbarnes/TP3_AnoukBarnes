@@ -2,6 +2,9 @@
 
 body{
     background-color: $primary-color;
+    font-family: "Inconsolata", monospace;
+    font-weight: 300;
+
 }
 
 img {
@@ -13,9 +16,16 @@ img {
     font-family: "Open Sans", sans-serif;
     font-size: 3rem;
     padding: 1.5em 0 1.5em 0;
+    font-weight: 600;
 }
 
-.projet-title{
-    font-family: "Open Sans", sans-serif;
+.second-title{
+    font-family: "Karla", sans-serif;
     font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
