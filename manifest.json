@@ -7,18 +7,19 @@
         "src": "img/PWA/maskable-icon.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "maskable"
+        "purpose": "any"
       },
       {
-        "src": "img/PWA/icon412.png",
+        "src": "img/PWA/icon144.png",
         "sizes": "144x144",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "any"
       },
       {
         "src": "img/PWA/icon192.png",
         "sizes": "192x192",
         "type": "image/png",
-        "purpose": "maskable"
+        "purpose": "any"
       },
   
       {
@@ -43,8 +44,11 @@
       }
     ],
     "start_url": "./index.html",
+    "id": "/TP3_AnoukBarnes/index.html",
     "display": "standalone",
     "background_color": "#dfeca5",
     "theme_color": "#ae88c4",
     "orientation": "landscape"
   }
+  
+  
