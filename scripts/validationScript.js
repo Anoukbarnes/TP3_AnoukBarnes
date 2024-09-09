@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
-    const firstname = document.getElementById('firstname'); 
-    const lastname = document.getElementById('lastname');
-    const email = document.getElementById('email');
-    const tel = document.getElementById('tel');
-    const delais = document.getElementById('delais');
-    const budget = document.getElementById('budget');
-    const description = document.getElementById('description');
+    const firstname = document.getElementById('floating_first_name'); 
+    const lastname = document.getElementById('floating_last_name');
+    const email = document.getElementById('floating_email');
+    const tel = document.getElementById('floating_tel');
+    const deadline = document.getElementById('floating_deadline');
+    const budget = document.getElementById('floating_budget');
+    const description = document.getElementById('floating_description');
 
     if (form) {
         form.addEventListener('submit', e => {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const lastnameValue = lastname.value.trim();
         const emailValue = email.value.trim();
         const telValue = tel.value.trim();
-        const delaisValue = delais.value.trim();
+        const deadlineValue = deadline.value.trim();
         const budgetValue = budget.value;
         const descriptionValue = description.value.trim();
 
@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             setSuccess(tel);
         }
 
-        if (delaisValue === '') {
-            setError(delais, 'Veuillez entrer un délais souhaité');
+        if (deadlineValue === '') {
+            setError(deadline, 'Veuillez entrer un délais souhaité');
             noError = false;
         } else {
             const currentDate = new Date();
@@ -72,21 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentMonth = currentDate.getMonth();
             const currentDay = currentDate.getDate();
             
-            const delaisDate = new Date(delaisValue);
-            const delaisYear = delaisDate.getFullYear();
-            const delaisMonth = delaisDate.getMonth();
-            const delaisDay = delaisDate.getDate();
+            const deadlineDate = new Date(deadlineValue);
+            const deadlineYear = deadlineDate.getFullYear();
+            const deadlineMonth = deadlineDate.getMonth();
+            const deadlineDay = deadlineDate.getDate();
 
-            if (isNaN(delaisDate.getTime())) {
-                setError(delais, 'Veuillez entrer une date valide');
+            if (isNaN(deadlineDate.getTime())) {
+                setError(deadline, 'Veuillez entrer une date valide');
                 noError = false;
-            } else if (delaisYear < currentYear || 
-                      (delaisYear === currentYear && delaisMonth < currentMonth) ||
-                      (delaisYear === currentYear && delaisMonth === currentMonth && delaisDay < currentDay)) {
-                setError(delais, 'Veuillez entrer une date après la date actuelle');
+            } else if (deadlineYear < currentYear || 
+                      (deadlineYear === currentYear && deadlineMonth < currentMonth) ||
+                      (deadlineYear === currentYear && deadlineMonth === currentMonth && deadlineDay < currentDay)) {
+                setError(deadline, 'Veuillez entrer une date après la date actuelle');
                 noError = false;
             } else {
-                setSuccess(delais);
+                setSuccess(deadline);
             }
         }
 
