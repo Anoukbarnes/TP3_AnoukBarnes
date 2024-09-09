@@ -12,26 +12,6 @@
   word-wrap: normal !important;
 }
 
-.bg-apropos {
-  background-color: rgb(220, 220, 220);
-}
-
-.bg-contact {
-  background-color: rgb(97, 146, 124);
-}
-
-.bg-projet-1 {
-  background-color: rgb(234, 240, 206);
-}
-
-.bg-projet-2 {
-  background-color: rgb(201, 128, 128);
-}
-
-.bg-projet-3 {
-  background-color: rgb(112, 140, 167);
-}
-
 .input-control input:focus {
   outline: 0;
 }
@@ -90,6 +70,26 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.bg-page-2 {
+  background-color: rgb(220, 220, 220);
+}
+
+.bg-page-1 {
+  background-color: rgb(97, 146, 124);
+}
+
+.bg-projet-1 {
+  background-color: rgb(234, 240, 206);
+}
+
+.bg-projet-2 {
+  background-color: rgb(201, 128, 128);
+}
+
+.bg-projet-3 {
+  background-color: rgb(112, 140, 167);
 }
 
 .title {

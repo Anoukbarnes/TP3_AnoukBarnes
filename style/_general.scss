@@ -12,6 +12,26 @@ img {
     height: auto;
 }
 
+.bg-page-2{
+    background-color: $page-4-color;
+}
+
+.bg-page-1{
+    background-color: $page-3-color;
+}
+
+.bg-projet-1{
+    background-color: $project-1-color;
+}
+
+.bg-projet-2{
+    background-color: $project-2-color;
+}
+
+.bg-projet-3{
+    background-color: $project-3-color;
+}
+
 .title {
     font-family: "Karla", sans-serif;
     font-size: 3rem;
