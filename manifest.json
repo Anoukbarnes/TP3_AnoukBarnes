@@ -4,12 +4,6 @@
     "description": "Portfolio Anouk Barnes",
     "icons": [
       {
-        "src": "img/PWA/maskable-icon.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
         "src": "img/PWA/icon144.png",
         "sizes": "144x144",
         "type": "image/png",
