@@ -11,24 +11,22 @@ img {
     height: auto;
 }
 
-.bg-page-2{
-    background-color: $page-4-color;
-}
-
-.bg-page-1{
-    background-color: $page-3-color;
-}
-
-.bg-projet-1{
-    background-color: $project-1-color;
-}
-
-.bg-projet-2{
-    background-color: $project-2-color;
-}
-
-.bg-projet-3{
-    background-color: $project-3-color;
+.bg {
+    &__page-2{
+        background-color: $page-2-color;
+    }
+    &__page-3{
+        background-color: $page-3-color;
+    }
+    &__page-4{
+        background-color: $project-1-color;
+    }
+    &__page-5{
+        background-color: $project-2-color;
+    }
+    &__page-6{
+        background-color: $project-3-color;
+    }
 }
 
 .title {

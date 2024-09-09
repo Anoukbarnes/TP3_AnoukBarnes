@@ -72,23 +72,19 @@ img {
   height: auto;
 }
 
-.bg-page-2 {
-  background-color: rgb(220, 220, 220);
+.bg__page-2 {
+  background-color: rgb(255, 255, 255);
 }
-
-.bg-page-1 {
+.bg__page-3 {
   background-color: rgb(97, 146, 124);
 }
-
-.bg-projet-1 {
+.bg__page-4 {
   background-color: rgb(234, 240, 206);
 }
-
-.bg-projet-2 {
+.bg__page-5 {
   background-color: rgb(201, 128, 128);
 }
-
-.bg-projet-3 {
+.bg__page-6 {
   background-color: rgb(112, 140, 167);
 }
 
