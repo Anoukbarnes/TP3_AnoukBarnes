@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v32';
+const CACHE_NAME = 'static-cache-v33';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
     //Pages
@@ -34,29 +34,17 @@ const FILES_TO_CACHE = [
 
 ];
 
-/// INSTALLATION SERVICE WORKER
+//INSTALLATION SERVICE WORKER
 self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
-    // Precache static resources here.
-    evt.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            console.log('[ServiceWorker] Pre-caching offline page');
-            return cache.addAll(FILES_TO_CACHE).catch((error) => {
-                console.error('[ServiceWorker] Pre-caching failed:', error);
-                // Iterate over each file to identify which one is causing the issue
-                FILES_TO_CACHE.forEach(async (file) => {
-                    try {
-                        await cache.add(file);
-                        console.log(`[ServiceWorker] Cached ${file} successfully.`);
-                    } catch (e) {
-                        console.error(`[ServiceWorker] Failed to cache ${file}:`, e);
-                    }
-                });
-                throw error; // Propagate the error
-            });
-        })
-    );
-    self.skipWaiting();
+   // Precache static resources here.
+   evt.waitUntil(
+   caches.open(CACHE_NAME).then((cache) => {
+       console.log('[ServiceWorker] Pre-caching offline page');
+       return cache.addAll(FILES_TO_CACHE);
+   })
+   );
+   self.skipWaiting();
 });
 
 // ACTIVATION
