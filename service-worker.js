@@ -1,7 +1,8 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v26';
+const CACHE_NAME = 'static-cache-v27';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
+    //Pages
     'offline.html',
     'index.html',
     'apropos.html',  
@@ -9,7 +10,13 @@ const FILES_TO_CACHE = [
     'confirmation.html',
     'pastaio.html',
     'polarka.html',
-    'renova.html'
+    'renova.html',
+    
+    //Images
+    '/img/pastaio/commandePastaio.png',
+    '/img/pastaio/pastaioAccueil.png',
+    '/img/pastaio/reservationsPastaio.png',
+    '/img/pastaio/restaurantPastaio.png',
 ];
 
 //INSTALLATION SERVICE WORKER
