@@ -23,12 +23,22 @@
 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="manifest" href="manifest.json">
-    
-    <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
+
+    <script>
+        // Register service worker.
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js') 
+            .then((reg) => {
+            console.log('Service worker registered.', reg); });
+            }); 
+        }
+    </script>
 </head>
 <body class="overflow-x-hidden">
 
     <header class="navbar grid grid-cols-12">
+        <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
         <nav class="col-start-2 col-end-12">
             <div class="flex flex-wrap items-center justify-between mx-auto">
                 <a href="#" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
