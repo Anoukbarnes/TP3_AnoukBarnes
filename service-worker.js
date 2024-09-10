@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v30';
+const CACHE_NAME = 'static-cache-v31';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
     //Pages
@@ -25,7 +25,7 @@ const FILES_TO_CACHE = [
 
     'img/renova/renovaAccueil.png',
     'img/renova/renovaAjout.png',
-    'img/renova/renovaFourniseurs.png',
+    'img/renova/renovaFournisseurs.png',
     'img/renova/renovaModif.png',
     'img/renova/renovaProduits.png',
 
