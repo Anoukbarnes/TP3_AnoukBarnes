@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v27';
+const CACHE_NAME = 'static-cache-v28';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
     //Pages
@@ -17,6 +17,21 @@ const FILES_TO_CACHE = [
     '/img/pastaio/pastaioAccueil.png',
     '/img/pastaio/reservationsPastaio.png',
     '/img/pastaio/restaurantPastaio.png',
+
+    '/img/polarka/polarkaAccueil.png',
+    '/img/polarka/polarkaContact.png',
+    '/img/polarka/polarkaEquipe.png',
+    '/img/polarka/polarkaServices.png',
+
+    '/img/renova/renovaAccueil.png',
+    '/img/renova/renovaAjout.png',
+    '/img/renova/renovaFourniseurs.png',
+    '/img/renova/renovaModif.png',
+    '/img/renova/renovaProduits.png',
+
+    '/img/anouk.jpg',
+    'img/logo.png'
+
 ];
 
 //INSTALLATION SERVICE WORKER
