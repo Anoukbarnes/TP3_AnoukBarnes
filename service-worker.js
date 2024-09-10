@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v17';
+const CACHE_NAME = 'static-cache-v18';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
@@ -60,3 +60,13 @@ self.addEventListener('fetch', (evt) => {
     })
     );
 });
+
+evt.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+        console.log('[ServiceWorker] Pre-caching offline page');
+        return cache.addAll(FILES_TO_CACHE).catch(error => {
+            console.error('[ServiceWorker] Pre-caching failed:', error);
+            throw error;
+        });
+    })
+);
