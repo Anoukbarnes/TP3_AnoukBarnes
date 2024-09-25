@@ -5,19 +5,19 @@ Ce portfolio présente un résumé de mes compétences et met en valeur plusieur
 
 ## :rocket: Projets présentés
 
-### 3. :memo: Le coin recettes
+### 1. :memo: Le coin recettes
 - **Technologies**: React Js, React Redux, API "themealdb" Tailwind CSS, HTML5, CSS
 - **Description**: Un site web fictif qui affiche plusieurs recettes de l'API "themealdb" et une gestion des abonnées à l'aide de React Redux. 
 
-### 1. 🍝 Pastaio
+### 2. 🍝 Pastaio
 - **Technologies**: HTML5, CSS3
 - **Description**: Une page web élégante pour un restaurant fictif, mettant en valeur mes compétences en design web statique.
 
-### 2. 💼 Polarka
+### 3. 💼 Polarka
 - **Technologies**: HTML5 (Méthodologie BEM), SASS (SCSS), JavaScript
 - **Description**: Un site web dynamique pour une compagnie T.I. fictive, illustrant ma capacité à utiliser des méthodologies de nommage avancées et des préprocesseurs CSS.
 
-### 3. 🏠 Renova
+### 4. 🏠 Renova
 - **Technologies**: React JS, Tailwind, CSS, HTML5
 - **Description**: Une application web interactive pour une compagnie fictive de matériaux de cuisine et salle de bain, démontrant mes compétences en frameworks CSS modernes et en développement front-end avec React.
 
