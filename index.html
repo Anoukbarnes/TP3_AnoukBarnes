@@ -82,7 +82,7 @@
                         Anouk Barnes
                     </h2>
                 </div>
-                <p class="py-8 text-lg font-normal text-center md:w-4/12 w-7/12 mx-auto">
+                <p class="py-8 text-xl font-normal text-center md:w-4/12 w-7/12 mx-auto">
                     Développeuse front-end junior résidant à Montréal. Forte d'une passion pour le web et le souci du détail,
                     je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.
                 </p> 
@@ -95,49 +95,109 @@
                 <h3 class="sm:col-span-12 sm:text-left col-start-2 col-span-10 text-center title">Mes projets</h3>
             </div>
 
-            <div class="container grid grid-cols-12 sm:grid-rows-6 mx-auto sm:gap-6 pb-12 ">
-                <div class="sm:col-start-1 sm:col-end-7 sm:row-start-2 sm:row-end-6 sm:w-full col-span-12 col-start-2 w-9/12 pt-6">
-                    <div class="md:pb-5 md:flex md:justify-between">
-                        <h4 class="project-title">Le coin recettes</h4>
-                        <div class="md:py-3 md:mt-2 py-2">
-                            <i class="fa-brands fa-html5 md:fa-2xl fa-xl pr-2" style="color: #ece474;"></i>
-                            <i class="fa-brands fa-css3-alt md:fa-2xl fa-xl pr-2" style="color: #c57cae;"></i>
-                        </div>
-                    </div>
+            <div class=" pb-12 ">
+                <div class="projetCtn pt-8 pb-8">
                     <a href="coinrecettes.html" class="flex justify-center">
-                        <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/coinrecettes/accueilrecettes.png" alt="Page d'accueil projet le coin recettes">
-                    </a>
-                </div>
-            
-                    
-                <div class="sm:col-start-7 sm:col-end-13 sm:row-span-3 sm:w-full col-span-12 col-start-2 w-9/12 pt-6">
-                    <div class="md:pb-5 md:flex md:justify-between">
-                        <h4 class="project-title">Polarka</h4>
-                        <div class="md:py-3 md:mt-2 py-2">
-                            <i class="fa-brands fa-html5 md:fa-2xl fa-xl pr-2" style="color: #ece474;"></i>
-                            <i class="fa-brands fa-css3-alt md:fa-2xl fa-xl pr-2" style="color: #c57cae;"></i>
-                            <i class="fa-brands fa-js md:fa-2xl fa-xl pr-2" style="color: #c2ad61;"></i>
-                            <i class="fa-brands fa-sass md:fa-2xl fa-xl pr-2" style="color: #74C0FC;"></i>
-                        </div>   
-                    </div>
-                    <a href="polarka.html" class="flex justify-center">
-                        <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/polarka/polarkaAccueil.png" alt="Page d'accueil projet Polarka">
+                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
+                                <div class="columns-lg">  
+                                    <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/coinrecettes/accueilrecettes.png" alt="Page d'accueil projet le coin recettes">
+                                </div>
+                                <div class="columns-sm">
+                                    <h4 class="project-title">Le coin recettes</h4>
+                                    <div class="md:py-3 md:mt-2 py-3 icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-react md:fa-2xl fa-lg" style="color: #52a4aa;"></i>
+                                        <i class="fa-brands fa-tailwind-css md:fa-2xl fa-lg" style="color: #36dae6;"></i>
+                                    </div>
+                                </div>
+                                <div class="project-description">   
+                                    <p class="text-lg"> Le coin recettes est un site fictif pour un site de recettes. À l'aide de React, 
+                                        plusieurs appels sont fait à l'api "themealDB" afin d'avoir accès à plusieurs recettes 
+                                        ainsi que leurs instructions. React Redux permet également de faire une gestion des abonnés. 
+                                    </p>
+                                </div>
+                        </div>
                     </a>
                 </div>
 
-                <div class="sm:col-start-7 sm:col-end-13 sm:row-span-3 sm:w-full col-span-12 col-start-2 w-9/12 pt-6"></div>
-                    <div class="md:pb-5 md:flex md:justify-between">
-                        <h4 class="project-title">L'Observatoire du développement de l'Outaouais</h4>
-                        <div class="md:py-3 md:mt-2 py-2">
-                            <i class="fa-brands fa-html5 md:fa-2xl fa-xl pr-2" style="color: #ece474;"></i>
-                            <i class="fa-brands fa-css3-alt md:fa-2xl fa-xl pr-2" style="color: #c57cae;"></i>
-                            <i class="fa-brands fa-wordpress md:fa-2xl fa-xl pr-2" style="color: #74C0FC;"></i>
+                <div class="projetCtn pt-8 pb-8">
+                    <a href="polarka.html" class="flex justify-center">
+                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
+                                <div class="columns-lg">  
+                                     <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/polarka/polarkaAccueil.png" alt="Page d'accueil projet Polarka">
+                                </div>
+                                <div class="columns-sm">
+                                    <h4 class="project-title">Polarka</h4>
+                                    <div class="py-3 icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                        <i class="fa-brands fa-sass md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                    </div> 
+                                </div>
+                                <div class="project-description">   
+                                    <p class="text-lg"> 
+                                        Polarka est un site web one pager pour la compagnie de TI fictive Polarka. 
+                                        Fait avec HTML5 en utilisant la méthodologie BEM et la librairie SASS(SCSS) pour le style.
+                                    </p>
+                                </div>
                         </div>
-                    </div>
-                    <a href="odo.html" class="flex justify-center">
-                        <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/odo/odoHome.webp" alt="Page d'accueil projet Polarka">
                     </a>
                 </div>
+
+                <div class="projetCtn pt-8 pb-8">
+                    <a href="odo.html" class="flex justify-center">
+                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
+                                <div class="columns-lg">  
+                                       <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/odo/odoHomepage.webp" alt="Page d'accueil projet ODO">
+                                </div>
+                                <div class="columns-sm">
+                                    <h4 class="project-title">L'Observatoire du développement de l'Outaouais</h4>
+                                    <div class="md:py-3 md:mt-2 py-3 icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                </div>
+                                <div class="project-description">   
+                                    <p class="text-lg"> Site web vitrine pour le projet immobilier LÜDIQ, présentant un modèle d’habitation durable
+                                        et communautaire pensé pour les familles et le développement des enfants.
+                                    </p>
+                                     <span class="text-sm inline-block pt-5">* Projet réalisé dans le cadre de mon emploi chez coloc.</span>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="projetCtn pt-8 pb-8">
+                    <a href="ludiq.html" class="flex justify-center">
+                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
+                                <div class="columns-lg">  
+                                       <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/ludiq/ludiqHomepage.webp" alt="Page d'accueil projet Ludiq">
+                                </div>
+                                <div class="columns-sm">
+                                    <h4 class="project-title">Lüdiq</h4>
+                                    <div class="md:py-3 md:mt-2 py-3 icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                </div>
+                                <div class="project-description">   
+                                    <p class="text-lg"> 
+                                        Site web pour l'ODO, l'observatoire de recherche de l'Outaouais qui permet de rechercher et de diffuser 
+                                        des données dédiées au développement territorial. Le site a pour but de faciliter l’accès à des données,
+                                        études et outils visant à mieux comprendre les dynamiques territoriales en Outaouais.
+                                    </p>
+                                    <span class="text-sm inline-block pt-5">* Projet réalisé dans le cadre de mon emploi chez coloc.</span>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+            
 
             </div>
         </section>

@@ -4,7 +4,7 @@ body{
     background-color: $primary-color;
     font-family: "Inconsolata", monospace;
     font-weight: 500;
-    font-size:1rem;
+    font-size: 20px;
 }
 
 img {
@@ -52,8 +52,11 @@ img {
 
 .project-title {
     font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    font-size: 1.125rem; 
-    line-height: 1.75rem;
+    font-size: 2.125rem;
+    line-height: 2.3rem;
+    padding-right: 1.1em;
+    text-wrap: balance;
+}
+.icones i {
+    margin-right: -0.2em;
 }
