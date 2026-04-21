@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Anouk Barnes</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" >
 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="manifest" href="manifest.json">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/7116a37cd7.js" crossorigin="anonymous"></script>
 
@@ -24,110 +31,69 @@
             }); 
         }
     </script>
-
 </head>
 
-<body class="bg__page-5">
+<body class="">
 
-    <header class="navbar grid grid-cols-12">
+
+    <header class="navbar bg__page-5">
+        <div class="container mx-auto">
+
+        
         <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
-        <nav class="col-start-2 col-end-12">
-            <div class="flex flex-wrap items-center justify-between mx-auto">
-                <a href="index.html" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
-                    <img src="img/logo.png" class="h-16" alt="AB Logo">
-                </a>
-                <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center text-sm p-5 btn-nav rounded-2xl border-2 border-black" aria-controls="navbar-hamburger" aria-expanded="false">
-                    <span class="sr-only">Ouverture du menu</span>
-                    MENU
-                </button>
-                <div class="hidden w-full h-full" id="navbar-hamburger">
-                    <ul class="flex flex-col font-medium mt-4 rounded-lg">
-                        <li>
-                            <a href="index.html" class="block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Accueil
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="apropos.html" class="block py-12 text-6xl rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                À propos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="block py-12 text-6xl rounded  hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="group">
-                            <a href="#" class=" w-3/12 block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Projets
-                            </a>
-                            <ul class="pl-32 hidden group-hover:block">
-                                <li>
-                                    <a href="pastaio.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Pastaio
-                                    </a>
-                                <li>
-                                    <a href="polarka.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Polarka
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="renova.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Renova
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="coinrecettes.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Le coin recettes
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+            <nav class="col-start-2 col-end-12">
+                <div class="flex flex-wrap items-center justify-between mx-auto">
+                    <a href="index.html" class="rounded-2xl border-2 border-black">
+                        <img src="img/logo.png" class="h-16" alt="AB Logo">
+                    </a>
+                    <div class="">
+                        <ul class="flex font-medium mt-4 rounded-lg">
+                            <li>
+                                <a href="#apropos" class="block py-12 text-lg rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-y-px mr-6">
+                                    À propos
+                                </a>
+                            </li>
+                            <li>
+                                <p class=" w-3/12 block py-12 text-lg rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-y-px" aria-current="page">
+                                    Projets
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <a class="sr-only" href="#content">Aller au contenu</a>
-    <main id="content">
-        <section class="grid grid-cols-12 container mx-auto px-6">
-            <div class="col-span-12">
-                 <h1 class="title text-center">Polarka</h1>
+    <main id="content" class="">
+         <section class="grid grid-cols-12 bg__page-5 px-6">
+            <div class="container mx-auto  col-span-12">
+                 <h1 class="title text-center w-10/12 mx-auto">Polarka</h1>
             </div>
-            <div class="pb-8 sm:text-justify col-span-12 px-10 sm:px-0 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
-                <p>
-                    Pastaio est un site web one pager pour la compagnie de TI fictive Polarka.
-                    Fait avec HTML5 en utilisant la méthodologie BEM
-                    et la librairie SASS(SCSS) pour le style.
-                </p>
-            </div> 
         </section>
-           
 
-        <section>
-            <h2 class="sr-only">Projet Pastaio</h2>
+        <section class="bg__page-5">
                 <div class="grid grid-cols-12 container mx-auto pb-32 pt-6 px-2 sm:px-6">
                     <!--Lien composant: https://flowbite.com/docs/components/gallery/-->
-                    <div id="custom-controls-gallery" class="relative overflow-hidden w-full col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4" data-carousel="slide">
+                    <div id="custom-controls-gallery" class="relative overflow-hidden w-full col-span-12" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative overflow-hidden rounded-xl h-[15em] xs:h-[20em] sm:h-[25em] md:h-[30em]">
                             <!-- Item 1 -->
                             <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                                <img src="img/polarka/polarkaAccueil.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Accueil">
+                                <img src="img/polarka/polarkaAccueil.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Accueil">
                             </div>
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item="active">
-                                <img src="img/polarka/polarkaServices.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Services">
+                                <img src="img/polarka/polarkaServices.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Services">
                             </div>
                             <!-- Item 3 -->
                             <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                                <img src="img/polarka/polarkaEquipe.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=" Polarka section Équipe">
+                                <img src="img/polarka/polarkaEquipe.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=" Polarka section Équipe">
                             </div>
                             <!-- Item 4 -->
                             <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                                <img src="img/polarka/polarkaContact.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Contact">
+                                <img src="img/polarka/polarkaContact.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Polarka section Contact">
                             </div>
                         </div>
                         <div class="flex justify-center items-center pt-4">
@@ -153,63 +119,24 @@
                 
         </section>
         
-        <section class="px-6">
-            <h3 class="sr-only">Description du projet</h3>
-
-            <div class="grid grid-cols-12 container mx-auto px-6">
-                <div class="col-span-12  border-2 border-black rounded-2xl my-10">
-                    <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                        <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                            <img class="lg:rounded-t-xl lg:items-end rounded-xl " src="img/polarka/polarkaServices.png" alt="Image Polarka section nos services">
-                        </div>
-                        <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                            <h4 class="lg:pb-10 py-8 md:text-left project-title">Nos services</h4>
-                            <p class="leading-relaxed text-justify lg:text-base text-sm""> 
-                                Les cartes décrivent plusieurs services offerts par la compagnie. 
-                                Le style a été fait avec le compilateur SASS(SCSS). J'utilise également
-                                JavaScript pour effectuer une vérification de formulaire. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12  border-2 border-black rounded-2xl my-10">
-                    <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                        <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                            <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/polarka/polarkaEquipe.png" alt="Image Polarka section équipe">
-                        </div>
-                        <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                            <h4 class="lg:pb-10 py-8 md:text-left project-title">L'équipe</h4>
-                            <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                                Cette section permet de présenter à l'aide d'une carte chaque employé
-                                de la compagnie Polarka ainsi que des liens menant à leurs réseaux 
-                                sociaux respectifs. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12  border-2 border-black rounded-2xl my-10">
-                    <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                        <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                            <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/polarka/polarkaContact.png" alt="Image Polarka section nous joindre">
-                        </div>
-                        <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                            <h4 class="lg:pb-10 py-8 md:text-left project-title">Joindre Polarka</h4>
-                            <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                                Cette section permet de visualiser l'emplacement de la compagnie à l'aide 
-                                d'un iframe. Elle contient aussi un formulaire permettant de contacter la compagnie. 
-                                Une vérification du formulaire est faite avec JavaScript.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <section class="container mx-auto py-10 px-6">
+            <div class="rounded-2xl p-6 md:py-10 lg:mx-32">
+                <h3 class="text-4xl font-semibold py-6">Description du projet</h3>
+                <div class="pb-8 sm:text-justify col-span-12 px-10 sm:px-0 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
+                    <p>
+                        Polarka est un site web one pager pour la compagnie de TI fictive Polarka. 
+                        Fait avec HTML5 en utilisant la méthodologie BEM et la librairie SASS(SCSS) pour le style, 
+                        ainsi que Javascript pour la validation de formulaire. 
+                    </p>
+                    <p class="pt-10">
+                        Technologies utilisées: HTML5, CSS, Javascript, SASS
+                    </p>
+                </div> 
             </div>
         </section>
 
+
         <section class="px-6">
-            <div class="grid grid-cols-12 container mx-auto sm:py-8 pt-16">
-                <h5 class="second-title text-center col-span-12 sm:pb-12 pb-4">Pour plus d'informations</h5>
-            </div>
-            
             <div class="grid grid-cols-12 container mx-auto py-8">
                 <div class="flex col-span-12 sm:flex-row sm:justify-center flex-col justify-center items-center">
                     <div class="flex sm:justify-between sm:flex-row flex-col items-center">
@@ -223,7 +150,6 @@
                     </div>
                 </div>
             </div>
-            
         </section>
 
     </main>

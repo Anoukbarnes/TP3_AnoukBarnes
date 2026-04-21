@@ -34,170 +34,177 @@
 </head>
 <body class="overflow-x-hidden">
 
-    <header class="navbar grid grid-cols-12">
+    <header class="navbar intro-bg">
+        <div class="container mx-auto">
+
+        
         <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
-        <nav class="col-start-2 col-end-12">
-            <div class="flex flex-wrap items-center justify-between mx-auto">
-                <a href="index.html" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
-                    <img src="img/logo.png" class="h-16" alt="AB Logo">
-                </a>
-                <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center text-sm p-5 btn-nav rounded-2xl border-2 border-black" aria-controls="navbar-hamburger" aria-expanded="false">
-                    <span class="sr-only">Ouverture du menu</span>
-                    MENU
-                </button>
-                <div class="hidden w-full h-full" id="navbar-hamburger">
-                    <ul class="flex flex-col font-medium mt-4 rounded-lg">
-                        <li>
-                            <a href="index.html" class="block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Accueil
-                            </a>
-                        </li>
-                        <li>
-                            <a href="apropos.html" class="block py-12 text-6xl rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                À propos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="block py-12 text-6xl rounded  hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <p class=" w-3/12 block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Projets
-                            </p>
-                        </li>
-                    </ul>
+            <nav class="col-start-2 col-end-12">
+                <div class="flex flex-wrap items-center justify-between mx-auto">
+                    <a href="index.html" class="rounded-2xl border-2 border-black">
+                        <img src="img/logo.png" class="h-16" alt="AB Logo">
+                    </a>
+                    <div class="">
+                        <ul class="flex font-medium mt-4 rounded-lg">
+                            <li>
+                                <a href="#apropos" class="block py-12 text-lg rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-y-px mr-6">
+                                    À propos
+                                </a>
+                            </li>
+                            <li>
+                                <p class=" w-3/12 block py-12 text-lg rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-y-px" aria-current="page">
+                                    Projets
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     
     <a class="sr-only" href="#content">Aller au contenu</a>
     <main id="content">
-        <section class="grid grid-cols-12 container mx-auto px-6 animate__animated animate__fadeIn animate__slow">
-            <div class="col-span-12 sm:pb-20 sm:pt-32 pb-10 pt-14 ">
+        <section class="intro-bg  px-6 animate__animated animate__fadeIn animate__slow">
+            <div class="container mx-auto sm:pb-20 sm:pt-32 md:pb-20 pb-20 pt-14">
                 <div>
-                    <h2 class="projet-title text-7xl flex justify-center w-3/12 text-center mx-auto font-extrabold">
-                        Anouk Barnes
+                    <h2 class="projet-title text-6xl flex justify-center w-full mx-auto font-semibold tracking-tight pb-20">
+                        Anouk Barnes, développeuse front-end résidant à Montréal. Forte d'une passion pour le web et le souci du détail,
+                    je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.
                     </h2>
                 </div>
-                <p class="py-8 text-xl font-normal text-center md:w-4/12 w-7/12 mx-auto">
-                    Développeuse front-end junior résidant à Montréal. Forte d'une passion pour le web et le souci du détail,
-                    je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.
-                </p> 
             </div>
             
         </section>
 
-        <section class="px-6">
+        <section id="apropos" class="container mx-auto py-10">
+            <h3 class="pt-8 title">À propos</h3>
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-5">
+                    <img class="rounded-xl max-h-[500px]" src="img/anouk.jpg" alt="photo Anouk">
+                </div>
+                <div class="col-span-6">
+                    <p class="pb-6">Les défis et la création sont ce qui me motive. Chaque projet est une occasion de construire
+                    quelque chose d'unique. Après avoir été éducatrice à l’enfance pendant près de 10 ans, j’ai 
+                    osé faire un 180 degrés et changer de carrière. C’est en créant un site web pour le plaisir que mon 
+                    intérêt s’est développé découvrant un univers fascinant qui me captive toujours autant. 
+                    </p>
+                    <p class="pb-6">
+                        Passionnée de musique (basse électrique) et de loisirs créatifs (couture, tricot), 
+                        je retrouve dans le développement web la même joie de créer.
+                    </p>
+                    <p> L'apprentissage continu, c'est quelque chose qui me tient vraiment à coeur. Une nouvelle librairie,
+                        un concept que je ne connais pas encore, ou même les conseils d'un collègue plus expérimenté, pour moi, 
+                        c'est toujours une occasion de progresser. Et travailler en équipe, échanger des idées, 
+                        construire quelque chose ensemble, c'est vraiment ce qui me motive au quotidien. 
+                    </p>
+                </div>
+            </div>
+                
+        </section>
+
+        <section class="px-6 py-10">
             <div class="container grid grid-cols-12 mx-auto text-6xl">
-                <h3 class="sm:col-span-12 sm:text-left col-start-2 col-span-10 text-center title">Mes projets</h3>
+                <h3 class="sm:col-span-12 sm:text-left col-start-2 col-span-10 title">Mes projets</h3>
             </div>
 
-            <div class=" pb-12 ">
-                <div class="projetCtn pt-8 pb-8">
-                    <a href="coinrecettes.html" class="flex justify-center">
-                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
-                                <div class="columns-lg">  
-                                    <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/coinrecettes/accueilrecettes.png" alt="Page d'accueil projet le coin recettes">
+            <div class=" pb-12 grid grid-cols-12 gap-16 container mx-auto">
+                <div class="projetCtn pb-8 col-span-6">
+                    <a href="odo.html" class="">
+                        <div class="container mx-auto flex flex-col pt-6">
+                            <div class="columns-lg overflow-hidden">  
+                                <img class="imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/odo/odoHomepage.webp" alt="Page d'accueil projet ODO">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!-- <h4 class="project-title py-4 w-8/12">L'Observatoire du développement de l'Outaouais</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                    <div>
+                                        <span class="btn mt-2 py-2 px-4 rounded-2xl border-2 border-black">En savoir plus</span>
+                                    </div>
                                 </div>
-                                <div class="columns-sm">
-                                    <h4 class="project-title">Le coin recettes</h4>
-                                    <div class="md:py-3 md:mt-2 py-3 icones">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="projetCtn pb-8 col-span-6">
+                    <a href="ludiq.html" class="">
+                        <div class="container mx-auto flex flex-col pt-6">
+                            <div class="columns-lg overflow-hidden">  
+                                <img class="imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/ludiq/ludiqHomepage.webp" alt="Page d'accueil projet Ludiq">
+                            </div>
+                            <div class="columns-sm pt-6">                          
+                                <!-- <h4 class="project-title py-4 w-8/12">Lüdiq</h4>  -->                         
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                    <div>
+                                        <span class="btn mt-2 py-2 px-4 rounded-2xl border-2 border-black">En savoir plus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projetCtn pt-8 col-span-6">
+                    <a href="coinrecettes.html" class="">
+                        <div class="container mx-auto flex flex-col pt-6">
+                            <div class="columns-lg overflow-hidden">  
+                                <img class="imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/coinrecettes/accueilrecettes.png" alt="Page d'accueil projet le coin recettes">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!-- <h4 class="project-title py-4 w-8/12">Le coin recettes</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
                                         <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
                                         <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
                                         <i class="fa-brands fa-react md:fa-2xl fa-lg" style="color: #52a4aa;"></i>
                                         <i class="fa-brands fa-tailwind-css md:fa-2xl fa-lg" style="color: #36dae6;"></i>
                                     </div>
+                                    <div>
+                                        <span class="btn mt-2 py-2 px-4 rounded-2xl border-2 border-black">En savoir plus</span>
+                                    </div>
                                 </div>
-                                <div class="project-description">   
-                                    <p class="text-lg"> Le coin recettes est un site fictif pour un site de recettes. À l'aide de React, 
-                                        plusieurs appels sont fait à l'api "themealDB" afin d'avoir accès à plusieurs recettes 
-                                        ainsi que leurs instructions. React Redux permet également de faire une gestion des abonnés. 
-                                    </p>
-                                </div>
+
+                            </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="projetCtn pt-8 pb-8">
-                    <a href="polarka.html" class="flex justify-center">
-                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
-                                <div class="columns-lg">  
-                                     <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/polarka/polarkaAccueil.png" alt="Page d'accueil projet Polarka">
-                                </div>
-                                <div class="columns-sm">
-                                    <h4 class="project-title">Polarka</h4>
-                                    <div class="py-3 icones">
+                <div class="projetCtn pt-8 col-span-6">
+                    <a href="polarka.html" class="">
+                        <div class="container mx-auto flex flex-col pt-6">
+                            <div class="columns-lg overflow-hidden">  
+                                    <img class="imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/polarka/polarkaAccueil.png" alt="Page d'accueil projet Polarka">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!--<h4 class="project-title py-4 w-8/12">Polarka</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
                                         <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
                                         <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
                                         <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
                                         <i class="fa-brands fa-sass md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
                                     </div> 
+                                    <div>
+                                        <span class="btn mt-2 py-2 px-4 rounded-2xl border-2 border-black">En savoir plus</span>
+                                    </div>
                                 </div>
-                                <div class="project-description">   
-                                    <p class="text-lg"> 
-                                        Polarka est un site web one pager pour la compagnie de TI fictive Polarka. 
-                                        Fait avec HTML5 en utilisant la méthodologie BEM et la librairie SASS(SCSS) pour le style.
-                                    </p>
-                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="projetCtn pt-8 pb-8">
-                    <a href="odo.html" class="flex justify-center">
-                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
-                                <div class="columns-lg">  
-                                       <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/odo/odoHomepage.webp" alt="Page d'accueil projet ODO">
-                                </div>
-                                <div class="columns-sm">
-                                    <h4 class="project-title">L'Observatoire du développement de l'Outaouais</h4>
-                                    <div class="md:py-3 md:mt-2 py-3 icones">
-                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
-                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
-                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
-                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
-                                    </div> 
-                                </div>
-                                <div class="project-description">   
-                                    <p class="text-lg"> Site web vitrine pour le projet immobilier LÜDIQ, présentant un modèle d’habitation durable
-                                        et communautaire pensé pour les familles et le développement des enfants.
-                                    </p>
-                                     <span class="text-sm inline-block pt-5">* Projet réalisé dans le cadre de mon emploi chez coloc.</span>
-                                </div>
-                        </div>
-                    </a>
-                </div>
-
-                 <div class="projetCtn pt-8 pb-8">
-                    <a href="ludiq.html" class="flex justify-center">
-                        <div class="container mx-auto grid grid-cols-3 items-center pt-6">
-                                <div class="columns-lg">  
-                                       <img class="w-11/12 rounded-lg hover:scale-105 transition duration-500 shadow-lg" src="img/ludiq/ludiqHomepage.webp" alt="Page d'accueil projet Ludiq">
-                                </div>
-                                <div class="columns-sm">
-                                    <h4 class="project-title">Lüdiq</h4>
-                                    <div class="md:py-3 md:mt-2 py-3 icones">
-                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
-                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
-                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
-                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
-                                    </div> 
-                                </div>
-                                <div class="project-description">   
-                                    <p class="text-lg"> 
-                                        Site web pour l'ODO, l'observatoire de recherche de l'Outaouais qui permet de rechercher et de diffuser 
-                                        des données dédiées au développement territorial. Le site a pour but de faciliter l’accès à des données,
-                                        études et outils visant à mieux comprendre les dynamiques territoriales en Outaouais.
-                                    </p>
-                                    <span class="text-sm inline-block pt-5">* Projet réalisé dans le cadre de mon emploi chez coloc.</span>
-                                </div>
-                        </div>
-                    </a>
-                </div>
-            
 
             </div>
         </section>
@@ -236,7 +243,7 @@
 
     </main>
 
-    <footer class="grid grid-cols-12 py-10 px-6">
+    <footer class="container mx-auto py-10 px-6">
         <div class="sm:col-start-2 sm:col-end-12 col-span-12">
             <div class="flex items-end sm:flex-row sm:items-center justify-between ">
                 <div class="inline-block">
@@ -270,7 +277,7 @@
             </div>
             <div class="grid grid-cols-12">
                 <div class="col-span-8 sm:col-start-1 col-start-3">
-                    <p class="text-sm lg:text-normal text-gray-700 text-center sm:text-left">© 2024 Anouk Barnes. Tous droits réservés.</p>
+                    <p class="text-sm lg:text-normal text-gray-700 text-center sm:text-left">© 2026 Anouk Barnes. Tous droits réservés.</p>
                 </div>
                 <div class="col-start-12 hidden sm:flex mt-4 sm:justify-center items-end sm:mt-0">
                     <a href="https://www.linkedin.com/in/anouk-barnes-a129802a0/" target="_blank" class="ms-5 inline-block">

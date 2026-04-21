@@ -54,17 +54,25 @@ button.btn-nav {
 }
 
 .links {
-  color: rgb(230, 232, 255);
+  color: rgb(150, 154, 203);
 }
 .links:hover {
   font-weight: bold;
 }
 
 body {
-  background-color: rgb(230, 232, 255);
+  background-color: rgb(255, 253, 251);
   font-family: "Inconsolata", monospace;
   font-weight: 500;
   font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a * {
+  cursor: pointer;
 }
 
 img {
@@ -91,10 +99,14 @@ img {
   background-color: rgb(204, 159, 122);
 }
 
+.intro-bg {
+  background-color: rgb(150, 154, 203);
+}
+
 .title {
   font-family: "Karla", sans-serif;
   font-size: 3rem;
-  padding: 1.5em 0 1.5em 0;
+  padding: 1.5em 0 0.5em 0;
   font-weight: 600;
 }
 
@@ -109,13 +121,29 @@ img {
 }
 
 .project-title {
-  font-weight: bold;
-  font-size: 2.125rem;
-  line-height: 2.3rem;
+  line-height: 1.4rem;
   padding-right: 1.1em;
   text-wrap: balance;
 }
 
 .icones i {
   margin-right: -0.2em;
+}
+
+.imgProjet {
+  max-height: 410px;
+}
+
+.btn::after {
+  font-family: "Font Awesome 7 Free";
+  content: "\f061";
+  font-size: 0.8em;
+  font-weight: 600;
+  padding-left: 0.75em;
+  display: inline-block;
+  transition: 0.3s ease-in;
+}
+
+.projetCtn:hover .btn::after {
+  transform: translateX(20%);
 }

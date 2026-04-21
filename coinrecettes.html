@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr-ca">
+<!DOCTYPE html>
+<html lang="fr-ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Anouk Barnes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" >
@@ -28,119 +35,76 @@
     </script>
 </head>
 
-<body class="bg__page-7">
+<body class="">
 
-    <header class="navbar grid grid-cols-12">
+    <header class="navbar bg__page-7">
+        <div class="container mx-auto">
+
+        
         <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
-        <nav class="col-start-2 col-end-12">
-            <div class="flex flex-wrap items-center justify-between mx-auto">
-                <a href="index.html" class="space-x-3 rtl:space-x-reverse btn-nav rounded-2xl m-3 border-2 border-black">
-                    <img src="img/logo.png" class="h-16" alt="AB Logo">
-                </a>
-                <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center text-sm p-5 btn-nav rounded-2xl border-2 border-black" aria-controls="navbar-hamburger" aria-expanded="false">
-                    <span class="sr-only">Ouverture du menu</span>
-                    MENU
-                </button>
-                <div class="hidden w-full h-full" id="navbar-hamburger">
-                    <ul class="flex flex-col font-medium mt-4 rounded-lg">
-                        <li>
-                            <a href="index.html" class="block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Accueil
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="apropos.html" class="block py-12 text-6xl rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                À propos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="block py-12 text-6xl rounded  hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-x-5">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="group">
-                            <a href="#" class=" w-3/12 block py-12 text-6xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                Projets
-                            </a>
-                            <ul class="pl-32 hidden group-hover:block">
-                                <li>
-                                    <a href="pastaio.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Pastaio
-                                    </a>
-                                <li>
-                                    <a href="polarka.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Polarka
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="renova.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Renova
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="coinrecettes.html" class="block py-12 text-3xl rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-x-5" aria-current="page">
-                                        - Le coin recettes
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+            <nav class="col-start-2 col-end-12">
+                <div class="flex flex-wrap items-center justify-between mx-auto">
+                    <a href="index.html" class="rounded-2xl border-2 border-black">
+                        <img src="img/logo.png" class="h-16" alt="AB Logo">
+                    </a>
+                    <div class="">
+                        <ul class="flex font-medium mt-4 rounded-lg">
+                            <li>
+                                <a href="#apropos" class="block py-12 text-lg rounded hover:text-gray-700 transition-all duration-200 ease-in-out hover:translate-y-px mr-6">
+                                    À propos
+                                </a>
+                            </li>
+                            <li>
+                                <p class=" w-3/12 block py-12 text-lg rounded hover:text-gray-700 hover:transition-all hover:duration-200 hover:ease-in-out hover:translate-y-px" aria-current="page">
+                                    Projets
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <a class="sr-only" href="#content">Aller au contenu</a>
     <main id="content">
 
-        <section class="grid grid-cols-12 container mx-auto px-6">
-            <div class="col-span-12">
-                 <h1 class="title text-center">Le coin recettes </h1>
+        <section class="grid grid-cols-12 px-6 bg__page-7">
+            <div class="container mx-auto  col-span-12">
+                 <h1 class="title text-center w-10/12 mx-auto">Le coin recettes </h1>
             </div>
-            <div class="pb-8 sm:text-justify col-span-12 px-10 sm:px-0 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
-                <p>
-                    Le coin recettes est un site fictif pour un site de recettes. À l'aide 
-                    de React, plusieurs appels sont fait à l'api "themealDB" afin d'avoir 
-                    accès à plusieurs recettes ainsi que leurs instructions. React Redux permet 
-                    également de faire une gestion des abonnés. 
-                </p>
-                <p class="pt-10">
-                    Technologies utilisées: React, React Redux, Tailwind CSS, CSS
-                </p>
-            </div> 
         </section>
 
-    <section>
-        <h2 class="sr-only">Projet Renova</h2>
+        <section class="bg__page-7">
+            <h2 class="sr-only">Projet Coin recettes</h2>
             <div class="grid grid-cols-12 container mx-auto pb-32 pt-6 px-2 sm:px-6">
                 <!--Lien composant: https://flowbite.com/docs/components/gallery/-->
-                <div id="custom-controls-gallery" class="relative overflow-hidden w-full col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4" data-carousel="slide">
+                <div id="custom-controls-gallery" class="relative overflow-hidden w-full col-span-12" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative overflow-hidden rounded-xl h-[15em] xs:h-[20em] sm:h-[25em] md:h-[30em]">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                            <img src="img/coinrecettes/accueilrecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes page d'accueil">
+                            <img src="img/coinrecettes/accueilrecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes page d'accueil">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item="active">
-                            <img src="img/coinrecettes/categorierecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes catégories de recettes">
+                            <img src="img/coinrecettes/categorierecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes catégories de recettes">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                            <img src="img/coinrecettes/listerecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes liste de recettes pour une catégorie">
+                            <img src="img/coinrecettes/listerecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes liste de recettes pour une catégorie">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                            <img src="img/coinrecettes/detailsrecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes instructions de la recette">
+                            <img src="img/coinrecettes/detailsrecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes instructions de la recette">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                            <img src="img/coinrecettes/footerrecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes footer ajout abonnés">
+                            <img src="img/coinrecettes/footerrecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes footer ajout abonnés">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
-                            <img src="img/coinrecettes/abonnesrecettes.png" class="absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes liste des abonnés">
+                            <img src="img/coinrecettes/abonnesrecettes.png" class="rounded-xl absolute block max-w-full w-auto h-full object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Le coin recettes liste des abonnés">
                         </div>
                     </div>
                     <div class="flex justify-center items-center pt-4">
@@ -162,121 +126,39 @@
                         </button>
                     </div>
                 </div>
+            </div>    
+        </section>
+    
+        <section class="container mx-auto py-10 px-6">
+            <div class="rounded-2xl p-6 md:py-10 lg:mx-32">
+                <h3 class="text-4xl font-semibold py-6">Description du projet</h3>
+                <div class="pb-8 sm:text-justify col-span-12 px-10 sm:px-0 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
+                    <p>
+                        Le coin recettes est un site fictif pour un site de recettes. À l'aide 
+                        de React, plusieurs appels sont fait à l'api "themealDB" afin d'avoir 
+                        accès à plusieurs recettes ainsi que leurs instructions. React Redux, permettant d'ajouter de nouveaux abonnés
+                        via un formulaire avec validation, de les afficher sous forme de cartes, de les modifier et de les supprimer. 
+                    </p>
+                    <p class="pt-10">
+                        Technologies utilisées: React, React Redux, Tailwind CSS, CSS
+                    </p>
+                </div> 
             </div>
             
-    </section>
-    
-    <section class="px-6">
-        <h3 class="sr-only">Description du projet</h3>
+        </section>
 
-        <div class="grid grid-cols-12 container mx-auto px-6">
-            <div class="col-span-12  border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/accueilrecettes.png" alt="Le coin recettes page d'accueil">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Accueil</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm md:text-xl"> 
-                            La page d'accueil affiche un carousel installé à l'aide d'un composant
-                            de la librairie React-Responsive-Carousel
-                        </p>
+        <section class="px-6">     
+            <div class="grid grid-cols-12 container mx-auto py-8">
+                <div class="flex col-span-12 sm:flex-row sm:justify-center flex-col justify-center items-center">
+                    <div class="flex sm:justify-between sm:flex-row flex-col items-center"> 
+                        <a href="https://github.com/Anoukbarnes" target="_blank" class="btn-primary">
+                            <span class="inline-block pr-2"><i class="fa-brands fa-github"></i>
+                            </span>GitHub
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/categorierecettes.png" alt="Le coin recettes catégories de recettes">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Les catégories</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                            Cette page permet à l'aide d'un appel à l'API d'afficher toutes 
-                            les recettes contenues dans celle-ci. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-12 border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/listerecettes.png" alt="Le coin recettes liste de recettes">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Les recettes selon la catégorie</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                            À partir d'un second appel à l'api, l'url prend en considération le nom 
-                            de la catégorie offert par l'api pour afficher toutes les catégories offertes par celle-ci.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-12 border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/detailsrecettes.png" alt="Le coin recettes instructions de la recette">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Instructions de recettes</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                           Cette page permet avec un appel à l'api distinct d'aller chercher 
-                           l'identifiant de la recette sur laquelle on a cliqué pour afficher 
-                           l'image de la recette, une liste des ingrédients ainsi que les instructions
-                           de la recette. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-12 border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/footerrecettes.png" alt="Le coin recettes footer ajout d'abonnés">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Abonnement</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                            Cette page permet à l'aide de React Redux de faire un ajout d'abonné. 
-                            Lorsqu'on entre un abonné, il s'ajoute ensuite dans une carte dans la page
-                            "liste des abonnés". Une vérification JavaScript est aussi effectuée pour le formulaire.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-12 border-2 border-black rounded-2xl my-10">
-                <div class="flex flex-col items-center md:justify-center md:items-center md:flex-row lg:justify-center lg:flex-row xl:pt-14 lg:items-stretch xl:items-stretch 2xl:items-stretch pt-8">
-                    <div class="lg:w-6/12 w-10/12 md:w-5/12 lg:pr-20 lg:self-end xl:self-end 2xl:self-end">
-                        <img class="lg:rounded-t-xl lg:items-end rounded-xl" src="img/coinrecettes/abonnesrecettes.png" alt="Le coin recettes liste des abonnés">
-                    </div>
-                    <div class="md:w-5/12 md:pl-8 pl-0 lg:w-4/12 lg:text-left w-10/12 pb-12 flex flex-col justify-center">
-                        <h4 class="lg:pb-10 py-8 lg:text-xl md:text-left project-title">Modification de produit</h4>
-                        <p class="leading-relaxed text-justify lg:text-base text-sm"> 
-                            React Redux permet ici de supprimer les cartes d'abonnées sur lesquelles
-                            on clique. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="px-6">
-        <div class="grid grid-cols-12 container mx-auto sm:py-8 pt-16">
-            <h5 class="second-title text-center col-span-12 sm:pb-12 pb-4">Pour plus d'informations</h5>
-        </div>
-        
-        <div class="grid grid-cols-12 container mx-auto py-8">
-            <div class="flex col-span-12 sm:flex-row sm:justify-center flex-col justify-center items-center">
-                <div class="flex sm:justify-between sm:flex-row flex-col items-center"> 
-                    <a href="https://github.com/Anoukbarnes" target="_blank" class="btn-primary">
-                        <span class="inline-block pr-2"><i class="fa-brands fa-github"></i>
-                        </span>GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+        </section>
 
 </main>
 
