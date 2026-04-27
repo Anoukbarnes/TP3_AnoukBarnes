@@ -9,16 +9,11 @@ button.btn-nav {
 }
 
 .btn-primary {
-    background-color: $btn-color !important;
     padding: 0.7em;
     border-radius: 10px;
-    transition: padding 200ms;
     border: solid black 2px;
 
     &:hover {
-        background-color: rgb(175, 122, 205);
-        padding: 0.75em;
-        height: auto;
         font-weight: 500;
     }
 }

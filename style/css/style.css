@@ -40,16 +40,11 @@ button.btn-nav {
 }
 
 .btn-primary {
-  background-color: rgb(174, 136, 196) !important;
   padding: 0.7em;
   border-radius: 10px;
-  transition: padding 200ms;
   border: solid black 2px;
 }
 .btn-primary:hover {
-  background-color: rgb(175, 122, 205);
-  padding: 0.75em;
-  height: auto;
   font-weight: 500;
 }
 
@@ -144,6 +139,44 @@ img {
   transition: 0.3s ease-in;
 }
 
-.projetCtn:hover .btn::after {
+.projetCtn:hover .btn::after,
+.btn:hover::after {
   transform: translateX(20%);
+}
+
+.max-w {
+  max-width: 1800px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-family: "Karla", sans-serif;
+    font-size: 2.6rem;
+    padding: 0 0 0.5em 0;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+  .pills button {
+    margin-bottom: 0.5rem;
+  }
 }

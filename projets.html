@@ -32,12 +32,12 @@
         }
     </script>
 </head>
+<body class="overflow-x-hidden">
 
-<body class="">
-
-
-    <header class="navbar bg__page-6 px-6 lg:px-12">
+    <header class="navbar intro-bg px-6 lg:px-12">
         <div class="max-w mx-auto">
+
+        
         <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
             <nav class="col-start-2 col-end-12">
                 <div class="flex flex-wrap items-center justify-between mx-auto">
@@ -62,73 +62,108 @@
             </nav>
         </div>
     </header>
-
+    
     <a class="sr-only" href="#content">Aller au contenu</a>
-    <main id="content" class="">
-         <section class="grid grid-cols-12 bg__page-3 px-6 lg:px-12">
-            <div class="container mx-auto  col-span-12">
-            
+    <main id="content">
+        <section class="px-6 lg:px-12 py-10  max-w w-full mx-auto">
+            <div class="inline-block lg:flex lg:flex-row xl:justify-between items-left lg:items-center mx-auto">
+                <h3 class="lg:pt-8 title">Mes projets</h3>
+                <span class="btn py-2 px-4 rounded-2xl border-2 border-black">Voir plus</span>
             </div>
-        </section>
 
-        <section class="bg__page-6">
-            <div class="w-11/12 mx-auto pt-8 md:pt-10 xl:pt-16 pb-20 xl:pb-32">
-                <img class="rounded-xl" src="img/polarka/polarkaHomepage.png" alt="">
-            </div>
-                
-        </section>
-        
-        <section class="max-w mx-auto py-10 lg:py-20 xl:py-40">
-            <div class="py-10 px-6 flex flex-col xl:flex-row">
-                <div class="w-full xl:w-6/12">
-                    <h1 class="title pr-10 pt-0">Polarka</h1>
-                    <div class="flex justify-between">
-                        <div class="pills pb-10 xl:pb-0">
-                            <button type="button" class="text-heading bg-transparent box-border border border-black  hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-1.5 focus:outline-none">HTML</button>
-                            <button type="button" class="text-heading bg-transparent box-border border border-black  hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-1.5 focus:outline-none">CSS</button>
-                            <button type="button" class="text-heading bg-transparent box-border border border-black  hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-1.5 focus:outline-none">SASS</button>
-                            <button type="button" class="text-heading bg-transparent box-border border border-black  hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-1.5 focus:outline-none">Javascript</button>
-                        </div> 
-                    </div>
+            <div class="pb-12 grid grid-cols-12 gap-4 md:gap-8 xl:gap-16">
+                <div class="projetCtn reveal mx-auto col-span-12 md:col-span-6 xl:col-span-6">
+                    <a href="odo.html" class="">
+                        <div class=" flex flex-col pt-6">
+                            <div class="w-full overflow-hidden">  
+                                <img class="w-full object-cover object-top imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/odo/odoHomepage.webp" alt="Page d'accueil projet ODO">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!-- <h4 class="project-title py-4 w-8/12">L'Observatoire du développement de l'Outaouais</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="w-full xl:w-6/12">
-                    <div class="pb-8 col-span-12">
-                        <p>
-                            Polarka est un site web one pager pour la compagnie de TI fictive Polarka. 
-                            Fait avec HTML5 en utilisant la méthodologie BEM et la librairie SASS(SCSS) pour le style
-                            et Javascript pour la validation de formulaire.
-                        </p>
-                    </div> 
+
+                 <div class="projetCtn mx-auto col-span-12 md:col-span-6 xl:col-span-6 reveal">
+                    <a href="ludiq.html" class="">
+                        <div class="max-w mx-auto flex flex-col pt-6">
+                            <div class="w-full overflow-hidden">  
+                                <img class="w-full object-cover object-top imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/ludiq/ludiqHomepage.webp" alt="Page d'accueil projet Ludiq">
+                            </div>
+                            <div class="columns-sm pt-6">                          
+                                <!-- <h4 class="project-title py-4 w-8/12">Lüdiq</h4>  -->                         
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-wordpress md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </section>
 
-        <section class="max-w mx-auto bg__page-6">
-            <div class="px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 py-20">
-                <img class="max-h-[180px] sm:max-h-[380px] object-cover h-full w-full rounded-xl" src="img/polarka/polarka4.png" alt="image projet polarka">
-                <img class="max-h-[180px] sm:max-h-[380px] object-cover h-full w-full rounded-xl" src="img/polarka/polarka2.png" alt="image projet polarka">
-                <img class="max-h-[180px] sm:max-h-[380px] object-cover h-full w-full rounded-xl" src="img/polarka/polarka3.png" alt="image projet polarka">
-                <img class="max-h-[180px] sm:max-h-[380px] object-cover h-full w-full rounded-xl" src="img/polarka/polarkaContact.png" alt="image projet polarka">
-            </div>
-        </section>
+                <div class="projetCtn mx-auto col-span-12 md:col-span-6 xl:col-span-6 reveal">
+                    <a href="coinrecettes.html" class="">
+                        <div class="max-w mx-auto flex flex-col pt-6">
+                            <div class="w-full overflow-hidden">  
+                                <img class="w-full object-cover object-top imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/coinrecettes/accueilrecettes.png" alt="Page d'accueil projet le coin recettes">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!-- <h4 class="project-title py-4 w-8/12">Le coin recettes</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-react md:fa-2xl fa-lg" style="color: #52a4aa;"></i>
+                                        <i class="fa-brands fa-tailwind-css md:fa-2xl fa-lg" style="color: #36dae6;"></i>
+                                    </div>
+                                </div>
 
-
-        <section class="px-6 lg:px-12 pb-0 lg:py-12">
-            <div class="grid grid-cols-12 container mx-auto py-8">
-                <div class="flex col-span-12 sm:flex-row sm:justify-center flex-col justify-center items-center">
-                    <div class="flex sm:justify-between sm:flex-row flex-col items-center">
-                        <a href="https://github.com/Anoukbarnes/TP1-integration2.git/" target="_blank" class="btn-primary sm:mb-0 mb-8">Voir sur Github
-                            <span class="inline-block pl-2"><i class="fa-solid fa-github"></i></span>
-                        </a> 
-                    </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+
+                <div class="projetCtn mx-auto col-span-12 md:col-span-6 xl:col-span-6 reveal">
+                    <a href="polarka.html" class="">
+                        <div class="max-w mx-auto flex flex-col pt-6">
+                            <div class="w-full overflow-hidden">  
+                                    <img class="w-full object-cover object-top imgProjet rounded-lg hover:scale-105 transition duration-700 shadow-lg" src="img/polarka/polarkaAccueil.png" alt="Page d'accueil projet Polarka">
+                            </div>
+                            <div class="columns-sm pt-6">
+                                <!--<h4 class="project-title py-4 w-8/12">Polarka</h4> -->
+                                <div class="flex justify-between">
+                                    <div class="icones">
+                                        <i class="fa-brands fa-html5 md:fa-2xl fa-lg" style="color: #d4c81d;"></i>
+                                        <i class="fa-brands fa-css3-alt md:fa-2xl fa-lg" style="color: #c57cae;"></i>
+                                        <i class="fa-brands fa-js md:fa-2xl fa-lg" style="color: #c2ad61;"></i>
+                                        <i class="fa-brands fa-sass md:fa-2xl fa-lg" style="color: #74C0FC;"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
-            
         </section>
+
 
     </main>
 
-      <footer class="max-w mx-auto py-10 px-6 lg:px-12">
+    <footer class="max-w mx-auto py-10 px-6 lg:px-12">
         <div class="sm:col-start-2 sm:col-end-12 col-span-12">
             <div class="flex items-end sm:flex-row sm:items-center justify-between ">
                 <div class="inline-block">
@@ -180,7 +215,18 @@
         </div>
       </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
